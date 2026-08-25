@@ -6,6 +6,7 @@ import { D, esc, nfmt, buckets } from './data.mjs';
 import { EBG_400, EBG_600, EBG_ITA, TIRO, SERIF, DEVA, MONO } from './fonts.mjs';
 import { mark } from './mark.mjs';
 import { armillary, armillaryDefs, armillaryMotion } from './armillary.mjs';
+import { ground } from './ground.mjs';
 
 const W = 880;
 
@@ -17,11 +18,11 @@ const T = {
   light: { paper:'#F6F4F0', panel:'#EFEBE3', ink:'#212121', ink2:'#645C53', ink3:'#766E60',
            line:'rgba(33,33,33,.16)', lineS:'rgba(33,33,33,.30)',
            gold:'#6B572F', goldG:'#9C7C3C', coreHi:'#C9AE79', coreLo:'#6E5626', bar:'#212121', rev:'#F6F4F0',
-           cellInk:'#212121', ramp:["#EFEBE3", "#EFE9DC", "#E0D3B8", "#CDB88E", "#B99C60"] },
+           groundOp:'.05', cellInk:'#212121', ramp:["#EFEBE3", "#EFE9DC", "#E0D3B8", "#CDB88E", "#B99C60"] },
   dark:  { paper:'#11161E', panel:'#161E29', ink:'#ECE6D8', ink2:'#9D937E', ink3:'#887F6E',
            line:'rgba(236,230,216,.16)', lineS:'rgba(236,230,216,.30)',
            gold:'#B39454', goldG:'#C7AA66', coreHi:'#EBD8A6', coreLo:'#6B5327', bar:'#ECE6D8', rev:'#11161E',
-           cellInk:'#ECE6D8', ramp:["#161E29", "#40341C", "#554526", "#67542D", "#786235"] },
+           groundOp:'.075', cellInk:'#ECE6D8', ramp:["#161E29", "#40341C", "#554526", "#67542D", "#786235"] },
 };
 
 const M = 56;                                   // page margin, matches the site's air
@@ -45,22 +46,24 @@ const MOTION = `
     .rule{stroke-dasharray:none}
   }` + armillaryMotion;
 
-const open = (h, t, fonts) => `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${h}" viewBox="0 0 ${W} ${h}" role="img">
+const open = (h, t, fonts, slice) => `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${h}" viewBox="0 0 ${W} ${h}" role="img">
 <defs><style>${fonts.join('')}${MOTION}</style></defs>
-<rect width="${W}" height="${h}" fill="${t.paper}"/>`;
+<rect width="${W}" height="${h}" fill="${t.paper}"/>
+${slice ? ground(W, h, slice.offset, slice.total, t) : ''}`;
 
 const caps = (s) => esc(s.toUpperCase());
 
 // ── HERO ───────────────────────────────────────────────────────────────────
-export function hero(mode) {
+export function hero(mode, slice) {
   const t = T[mode], H = 396;
   const OX = 686, OY = 214, OS = 236;        // orrery centre and size
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Ashforde — for the missions that cannot fail">
 <defs><style>${[EBG_400(), EBG_600(), EBG_ITA(), TIRO()].join('')}${MOTION}</style>${armillaryDefs(t)}</defs>
 <rect width="${W}" height="${H}" fill="${t.paper}"/>
+  ${slice ? ground(W, H, slice.offset, slice.total, t) : ''}
   <g style="--gg:${t.goldG};--ch:${t.coreHi}">
 
-  <text x="${M}" y="46" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Ashforde OÜ · European engineering company')}</text>
+  <text x="${M}" y="46" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Sovereign engineering · High assurance')}</text>
   <text x="${W-M}" y="46" text-anchor="end" font-family="${MONO}" font-size="10" letter-spacing="2.4" fill="${t.ink3}">A C. BAWEJA COMPANY</text>
   <path d="M${M} 60H${W-M}" stroke="${t.lineS}" stroke-width="1"/>
 
@@ -91,9 +94,9 @@ export function hero(mode) {
 }
 
 // ── DOMAINS OF WORK — the organising spine, straight from the site ─────────
-export function domains(mode) {
+export function domains(mode, slice) {
   const t = T[mode], rows = D.domains, H = 92 + rows.length * 62;
-  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()]) + `
+  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${M}" y="40" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Domains of work')}</text>
   <text x="${W-M}" y="40" text-anchor="end" font-family="${SERIF}" font-size="14" font-style="italic" fill="${t.ink3}">Where the cost of error is highest.</text>
   <path d="M${M} 56H${W-M}" stroke="${t.lineS}" stroke-width="1"/>
@@ -108,7 +111,7 @@ export function domains(mode) {
 }
 
 // ── STANDING — the numbers, framed as evidence rather than scoreboard ──────
-export function standing(mode) {
+export function standing(mode, slice) {
   const t = T[mode], H = 336, PAD = 48;
   const days = D.windowDays;
   // weekly totals — the activity card is daily, so this stays complementary
@@ -126,7 +129,7 @@ export function standing(mode) {
   const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   let lastMon = -1;
 
-  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()]) + `
+  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${PAD}" y="40" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Standing')}</text>
   <text x="${W-PAD}" y="40" text-anchor="end" font-family="${SERIF}" font-size="14" font-style="italic" fill="${t.ink3}">Credible where it counts.</text>
   <path d="M${PAD} 56H${W-PAD}" stroke="${t.lineS}" stroke-width="1"/>
@@ -161,9 +164,9 @@ export function standing(mode) {
 }
 
 // ── COMMITMENTS ────────────────────────────────────────────────────────────
-export function commitments(mode) {
+export function commitments(mode, slice) {
   const t = T[mode], rows = D.commitments, H = 78 + rows.length * 54;
-  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()]) + `
+  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${M}" y="40" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('The approach')}</text>
   <text x="${W-M}" y="40" text-anchor="end" font-family="${SERIF}" font-size="14" font-style="italic" fill="${t.ink3}">Engineered for assurance, not for show.</text>
   <path d="M${M} 56H${W-M}" stroke="${t.lineS}" stroke-width="1"/>
@@ -179,14 +182,14 @@ export function commitments(mode) {
 
 // ── ACTIVITY · numbered contribution grid, two bands so the numerals stay legible
 //    (one 53-week band caps the numerals at 7.5px on GitHub; two bands give 14.7px)
-export function activity(mode) {
+export function activity(mode, slice) {
   const t = T[mode], PAD = 48;
   const CELL = 23, GAP = 3.6, P = CELL + GAP;
   const days = D.windowDays;
   const weeks = [];
   for (let i = 0; i < days.length; i += 7) weeks.push(days.slice(i, i + 7));
   const bandH = 7 * P;
-  const H = 62 + bandH + 52;
+  const H = Math.round(62 + bandH + 52);
 
   const total = days.reduce((a, d) => a + d.contributionCount, 0);
   const max = Math.max(...days.map(d => d.contributionCount));
@@ -203,7 +206,7 @@ export function activity(mode) {
     return `<text x="${PAD + x * P}" y="62" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${t.ink3}">${MON[m].toUpperCase()}</text>`;
   }).join('');
 
-  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()]) + `
+  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${PAD}" y="34" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Activity · every contributing day, counted')}</text>
   <text x="${W-PAD}" y="34" text-anchor="end" font-family="${SERIF}" font-size="17" font-weight="600" fill="${t.ink}">${nfmt(total)}</text>
   <path d="M${PAD} 46H${W-PAD}" stroke="${t.lineS}" stroke-width="1"/>
@@ -223,7 +226,7 @@ export function activity(mode) {
 }
 
 // ── STACK · languages by mass. Brand-native, not a badge service ───────────
-export function stack(mode) {
+export function stack(mode, slice) {
   const t = T[mode], PAD = 48, H = 206;
   const top = D.langs.slice(0, 9);
   const pw = W - PAD * 2;
@@ -233,7 +236,7 @@ export function stack(mode) {
     const seg = `<rect x="${x.toFixed(1)}" y="76" width="${Math.max(0, w - 2).toFixed(1)}" height="22" fill="${t.goldG}" opacity="${(1 - i * 0.095).toFixed(2)}"/>`;
     x += w; return seg;
   }).join('');
-  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()]) + `
+  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${PAD}" y="34" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Working languages · by source mass')}</text>
   <text x="${W-PAD}" y="34" text-anchor="end" font-family="${SERIF}" font-size="14" font-style="italic" fill="${t.ink3}">${D.repos} repositories · ${D.sourceMB} MB</text>
   <path d="M${PAD} 46H${W-PAD}" stroke="${t.lineS}" stroke-width="1"/>
@@ -253,14 +256,14 @@ export function stack(mode) {
 
 
 // ── RESEARCH · preprints, discovered by author query so this never goes stale ──
-export function research(mode) {
+export function research(mode, slice) {
   const t = T[mode], PAD = 48;
   const ps = D.papers.slice(0, 6);
   const H = 74 + ps.length * 54 + 34;
   const CAT = { 'eess.SP':'Signal Processing', 'astro-ph.EP':'Earth & Planetary Astrophysics',
                 'cs.CR':'Cryptography & Security', 'astro-ph.IM':'Instrumentation & Methods' };
   const clip = (str, n) => str.length > n ? str.slice(0, n - 1).replace(/[\s,;:]+$/, '') + '…' : str;
-  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()]) + `
+  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${PAD}" y="34" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Research · preprints on arXiv')}</text>
   <text x="${W-PAD}" y="34" text-anchor="end" font-family="${SERIF}" font-size="14" font-style="italic" fill="${t.ink3}">Methods published so results can be contested.</text>
   <path d="M${PAD} 46H${W-PAD}" stroke="${t.lineS}" stroke-width="1"/>
@@ -279,7 +282,7 @@ export function research(mode) {
 
 // ── PROJECT · one card per product, so each carries its own link and its own
 //    status. YANA's pre-release state travels with the card, not a footnote.
-export function project(mode, key) {
+export function project(mode, key, slice) {
   const t = T[mode], PAD = 48;
   const p = D.products.find(x => x.key === key);
   const live = D.liveProducts.find(x => x.name === p.repo);
@@ -288,7 +291,7 @@ export function project(mode, key) {
   const MID = PAD + 268;                 // description column
   const chipW = p.status.length * 6.1 + 18;
 
-  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()]) + `
+  return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${PAD}" y="42" font-family="${SERIF}" font-size="26" font-weight="600" letter-spacing=".4" fill="${t.ink}">${esc(p.name)}</text>
   <text x="${PAD}" y="64" font-family="${MONO}" font-size="10" letter-spacing="1.3" fill="${t.gold}">${esc(p.site.toUpperCase())}</text>
 
@@ -311,7 +314,7 @@ export function project(mode, key) {
 }
 
 const projectCards = Object.fromEntries(
-  D.products.map(p => [`project-${p.key}`, (mode) => project(mode, p.key)]));
+  D.products.map(p => [`project-${p.key}`, (mode, slice) => project(mode, p.key, slice)]));
 
 export const cards = { hero, domains, stack, activity, standing, research, commitments, ...projectCards };
 export const meta = { id:'E', name:'ASHFORDE HOUSE',

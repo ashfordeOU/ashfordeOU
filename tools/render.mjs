@@ -16,8 +16,22 @@ fs.mkdirSync('assets', { recursive: true });
 
 let n = 0;
 const write = (name, svg) => { fs.writeFileSync(`assets/${name}.svg`, svg); n++; };
+
+// The cards share one continuous engraved ground, so each needs to know where
+// it sits in the column. Measure the stack first, then render it for real.
+const ORDER = ['hero', 'domains', 'project-yana', 'project-kshana', 'project-grasp',
+               'stack', 'activity', 'standing', 'research', 'commitments'];
+const GAP = 16;                                     // GitHub's margin between images
+// read the ROOT <svg> height — the first height= in the file may be a cell rect
+const rootH = (svg) => Math.round(+svg.match(/<svg\b[^>]*?\sheight="([\d.]+)"/)[1]);
+const heights = Object.fromEntries(ORDER.map((k) => [k, rootH(mod.cards[k]('light'))]));
+const total = ORDER.reduce((s, k) => s + heights[k] + GAP, 0);
+let y = 0;
+const slices = {};
+for (const k of ORDER) { slices[k] = { offset: y, total }; y += heights[k] + GAP; }
+
 for (const mode of ['light', 'dark'])
-  for (const [name, fn] of Object.entries(mod.cards)) write(`${name}-${mode}`, fn(mode));
+  for (const [name, fn] of Object.entries(mod.cards)) write(`${name}-${mode}`, fn(mode, slices[name]));
 
 const badges = languageBadges(write);
 
