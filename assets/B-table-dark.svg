@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="288" viewBox="0 0 880 288" role="img">
+<rect width="880" height="288" fill="#14120E"/>
+  <text x="58" y="34" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9.5" letter-spacing="2.4" fill="#877E6C">TABLE 1</text>
+  <text x="58" y="56" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13.5" fill="#BDB4A2"><tspan font-weight="700" fill="#F2EDE1">Tab. 1.</tspan> Source distribution across 50 repositories (381.5 MB, 14 languages).</text>
+
+  <path d="M58 72h764" stroke="#E8E2D5" stroke-width="1.1"/>
+  <g font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9" letter-spacing="1.8" fill="#877E6C">
+    <text x="58" y="88">LANGUAGE</text>
+    <text x="358" y="88" text-anchor="end">BYTES</text>
+    <text x="488" y="88" text-anchor="end">SHARE</text>
+  </g>
+  <path d="M58 96h764" stroke="#4A4438" stroke-width=".6"/>
+
+  
+    <text x="58" y="118" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="14" fill="#F2EDE1">Python</text>
+    <text x="358" y="118" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">126,619,626</text>
+    <text x="488" y="118" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">33.19 %</text>
+    <rect x="514" y="109" width="308" height="9" fill="#1C1913"/>
+    <rect x="514" y="109" width="102.2" height="9" fill="#D98A6A" opacity="1"/>
+    <path d="M58 127h764" stroke="#4A4438" stroke-width=".4" opacity=".6"/>
+    <text x="58" y="144" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="14" fill="#F2EDE1">TypeScript</text>
+    <text x="358" y="144" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">88,273,219</text>
+    <text x="488" y="144" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">23.14 %</text>
+    <rect x="514" y="135" width="308" height="9" fill="#1C1913"/>
+    <rect x="514" y="135" width="71.3" height="9" fill="#E0D8C6" opacity="0.75"/>
+    <path d="M58 153h764" stroke="#4A4438" stroke-width=".4" opacity=".6"/>
+    <text x="58" y="170" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="14" fill="#F2EDE1">HTML</text>
+    <text x="358" y="170" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">69,472,920</text>
+    <text x="488" y="170" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">18.21 %</text>
+    <rect x="514" y="161" width="308" height="9" fill="#1C1913"/>
+    <rect x="514" y="161" width="56.1" height="9" fill="#E0D8C6" opacity="0.75"/>
+    <path d="M58 179h764" stroke="#4A4438" stroke-width=".4" opacity=".6"/>
+    <text x="58" y="196" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="14" fill="#F2EDE1">JavaScript</text>
+    <text x="358" y="196" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">65,055,461</text>
+    <text x="488" y="196" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">17.05 %</text>
+    <rect x="514" y="187" width="308" height="9" fill="#1C1913"/>
+    <rect x="514" y="187" width="52.5" height="9" fill="#E0D8C6" opacity="0.75"/>
+    <path d="M58 205h764" stroke="#4A4438" stroke-width=".4" opacity=".6"/>
+    <text x="58" y="222" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="14" fill="#F2EDE1">Rust</text>
+    <text x="358" y="222" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">9,143,410</text>
+    <text x="488" y="222" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">2.40 %</text>
+    <rect x="514" y="213" width="308" height="9" fill="#1C1913"/>
+    <rect x="514" y="213" width="7.4" height="9" fill="#E0D8C6" opacity="0.75"/>
+    <path d="M58 231h764" stroke="#4A4438" stroke-width=".4" opacity=".6"/>
+    <text x="58" y="248" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="14" fill="#F2EDE1">Swift</text>
+    <text x="358" y="248" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">7,889,462</text>
+    <text x="488" y="248" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13" fill="#BDB4A2">2.07 %</text>
+    <rect x="514" y="239" width="308" height="9" fill="#1C1913"/>
+    <rect x="514" y="239" width="6.4" height="9" fill="#E0D8C6" opacity="0.75"/>
+    <path d="M58 257h764" stroke="#4A4438" stroke-width=".4" opacity=".6"/>
+  <path d="M58 266h764" stroke="#E8E2D5" stroke-width="1.1"/>
+  </svg>

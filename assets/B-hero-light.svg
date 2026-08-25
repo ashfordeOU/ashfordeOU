@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="302" viewBox="0 0 880 302" role="img">
+<rect width="880" height="302" fill="#F7F4ED"/>
+  <!-- running head -->
+  <text x="58" y="38" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9.5" letter-spacing="2.6" fill="#867C6C">ASHFORDE OÜ · TECHNICAL NOTE</text>
+  <text x="822" y="38" text-anchor="end" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9.5" letter-spacing="2.6" fill="#867C6C">REV. 2026.08 · TALLINN / FRANKFURT</text>
+  <path d="M58 48h764" stroke="#221E17" stroke-width="1.1"/>
+  <path d="M58 51.5h764" stroke="#221E17" stroke-width=".5"/>
+
+  <!-- title block -->
+  <text x="58" y="106" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="42" fill="#1A1610">Ashforde<tspan font-size="17" dy="-16" fill="#7B2D26"> ™</tspan></text>
+  <text x="58" y="136" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="19" font-style="italic" fill="#4E463A">For the missions that cannot fail</text>
+
+  <path d="M58 156h180" stroke="#7B2D26" stroke-width="2"/>
+
+  <!-- abstract -->
+  <text x="58" y="184" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9" letter-spacing="2.4" fill="#867C6C">ABSTRACT</text>
+  <g font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="14.5" fill="#4E463A">
+    <text x="58" y="206">Sovereign, high-assurance systems for the decisions that cannot be wrong —</text>
+    <text x="58" y="227">in space, in law, in finance, and across the regulated enterprise. Results are</text>
+    <text x="58" y="248">reproducible, standards are public, and nothing phones home.<tspan font-size="10" dy="-6" fill="#7B2D26">†</tspan></text>
+  </g>
+
+  <!-- right-hand key figures, tabular -->
+  <g transform="translate(584,176)">
+    <path d="M0 -6h238" stroke="#B9B0A0" stroke-width=".75"/>
+    
+      <text x="0"   y="16" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="12.5" fill="#4E463A">Contributions, 12 mo</text>
+      <text x="238" y="16" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13.5" font-weight="700" fill="#1A1610">16,687</text>
+      <path d="M0 22h238" stroke="#B9B0A0" stroke-width=".5" opacity=".7"/>
+      <text x="0"   y="38" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="12.5" fill="#4E463A">Repositories</text>
+      <text x="238" y="38" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13.5" font-weight="700" fill="#1A1610">50</text>
+      <path d="M0 44h238" stroke="#B9B0A0" stroke-width=".5" opacity=".7"/>
+      <text x="0"   y="60" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="12.5" fill="#4E463A">Source under management</text>
+      <text x="238" y="60" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13.5" font-weight="700" fill="#1A1610">381.5 MB</text>
+      <path d="M0 66h238" stroke="#B9B0A0" stroke-width=".5" opacity=".7"/>
+      <text x="0"   y="82" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="12.5" fill="#4E463A">Peer-reviewed preprints</text>
+      <text x="238" y="82" text-anchor="end" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="13.5" font-weight="700" fill="#1A1610">4 (arXiv)</text>
+      <path d="M0 88h238" stroke="#B9B0A0" stroke-width=".5" opacity=".7"/>
+  </g>
+
+  <!-- footnote -->
+  <path d="M58 272h150" stroke="#B9B0A0" stroke-width=".75"/>
+  <text x="58" y="288" font-family="Georgia,'Iowan Old Style','Palatino Linotype',Palatino,'Times New Roman',serif" font-size="10.5" fill="#867C6C"><tspan fill="#7B2D26">†</tspan> No analytics, no trackers, no outbound calls in any published binary.</text>
+  </svg>

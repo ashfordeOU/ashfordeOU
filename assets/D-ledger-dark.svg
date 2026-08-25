@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="282" viewBox="0 0 880 282" role="img">
+<rect width="880" height="282" fill="#000000"/>
+<text x="42" y="34" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="3.2" fill="#8A8A8A">PRODUCTS</text>
+<path d="M42 48H838" stroke="#FFFFFF" stroke-width="2.5"/>
+
+  <text x="42" y="80" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="-.9" fill="#FFFFFF">KSHANA</text>
+  <text x="44" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.5" fill="#FF5C33">KSHANA.DEV</text>
+  <text x="290" y="75" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="14.5" fill="#FFFFFF">PNT-resilience simulator</text>
+  <text x="290" y="94" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing=".9" fill="#8A8A8A">Rust lib + CLI · Python · WASM · MCP server</text>
+  <text x="838" y="75" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing="1" fill="#FFFFFF">v0.25.0</text>
+  <text x="838" y="94" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1" fill="#8A8A8A">AGPL-3.0</text>
+  <path d="M42 110H838" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+  <text x="42" y="142" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="-.9" fill="#FFFFFF">GRASP</text>
+  <text x="44" y="160" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.5" fill="#FF5C33">ASHFORDEOU.GITHUB.IO/GRASP</text>
+  <text x="290" y="137" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="14.5" fill="#FFFFFF">Code architecture intelligence</text>
+  <text x="290" y="156" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing=".9" fill="#8A8A8A">150 MCP tools · VS Code · JetBrains · GitHub Action</text>
+  <text x="838" y="137" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing="1" fill="#FFFFFF">v3.21.0</text>
+  <text x="838" y="156" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1" fill="#8A8A8A">Source-available</text>
+  <path d="M42 172H838" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+  <text x="42" y="204" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="-.9" fill="#FFFFFF">YANA·OPS</text>
+  <text x="44" y="222" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.5" fill="#FF5C33">YANAOPS.COM</text>
+  <text x="290" y="199" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="14.5" fill="#FFFFFF">Vendor-neutral mission-ops standard</text>
+  <text x="290" y="218" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing=".9" fill="#8A8A8A">Conformance suite · CCSDS / PUS · ECSS-aligned · No hidden egress</text>
+  <text x="838" y="199" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing="1" fill="#FFFFFF">public preview</text>
+  <text x="838" y="218" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="1" fill="#8A8A8A">Open standard</text>
+  <path d="M42 234H838" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+<path d="M42 268H838" stroke="#FFFFFF" stroke-width="2.5"/>
+</svg>

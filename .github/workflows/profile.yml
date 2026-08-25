@@ -1,0 +1,65 @@
+name: Refresh profile
+
+# Everything on the profile regenerates from live sources. No manual step.
+on:
+  schedule:
+    - cron: '17 4 * * *'        # 04:17 UTC daily — off the hour, when GitHub's API is quiet
+  workflow_dispatch:            # and on demand, from the Actions tab
+  push:
+    branches: [main]
+    paths:                      # re-render when the design or copy changes, not on every push
+      - 'src/**'
+      - 'tools/**'
+      - 'fonts/**'
+      - '.github/workflows/profile.yml'
+
+concurrency:
+  group: profile-refresh
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Collect live figures
+        env:
+          # A classic PAT with `repo` scope — the default GITHUB_TOKEN cannot see
+          # private repositories, and the private language mass is the whole point.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: node tools/collect.mjs
+
+      - name: Render cards and README
+        run: node tools/render.mjs
+
+      - name: Verify every SVG parses
+        run: |
+          for f in assets/*.svg; do
+            python3 -c "import xml.dom.minidom,sys; xml.dom.minidom.parse('$f')" \
+              || { echo "::error file=$f::malformed SVG"; exit 1; }
+          done
+          echo "$(ls assets/*.svg | wc -l) SVGs verified"
+
+      - name: Commit if anything moved
+        run: |
+          git config user.name  'ashforde-profile-bot'
+          git config user.email 'contact@ashforde.org'
+          git add -A assets README.md data.json
+          # data.json always changes (it carries a timestamp); only commit when a
+          # figure actually moved, so history stays meaningful rather than daily noise.
+          if git diff --cached --quiet -- assets README.md; then
+            echo "No visible change — skipping commit."
+            git reset
+          else
+            git commit -m "Refresh profile figures ($(date -u +%Y-%m-%d))"
+            git push
+          fi

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" role="img" aria-label="Ashforde">
+<rect width="880" height="300" fill="#000000"/>
+
+<!-- masthead band -->
+<rect x="0" y="0" width="880" height="94" fill="#FFFFFF"/>
+<text x="42" y="64" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="52" font-weight="700" letter-spacing="-2.2" fill="#000000">ASHFORDE<tspan font-size="18" dy="-24" letter-spacing="0">™</tspan></text>
+<text x="838" y="40" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="2" fill="#000000" opacity=".62">EST. TALLINN · OPS FRANKFURT</text>
+<text x="838" y="60" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="2" fill="#000000" opacity=".62">ASHFORDE.ORG</text>
+<rect x="754" y="70" width="84" height="4" fill="#FF5C33"/>
+
+<!-- statement -->
+<text x="42" y="140" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="27" font-weight="500" letter-spacing="-.7" fill="#FFFFFF">For the missions that cannot fail.</text>
+<path d="M42 158H838" stroke="#FFFFFF" stroke-width="2.5"/>
+
+<!-- the anchor numeral -->
+<text x="42" y="252" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="94" font-weight="700" letter-spacing="-5" fill="#FFFFFF">16,687</text>
+<text x="42" y="278" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="2.6" fill="#8A8A8A">CONTRIBUTIONS · ROLLING 12 MONTHS</text>
+<rect x="42" y="262" width="0" height="0" fill="none"/>
+
+<!-- ledger column -->
+<g transform="translate(508,176)">
+  <path d="M0 -12H330" stroke="#FFFFFF" stroke-width="2.5"/>
+  
+    <text x="0"   y="14" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#8A8A8A">PRIVATE</text>
+    <text x="212" y="15" text-anchor="end" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">13,674</text>
+    <text x="330" y="14" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.2" fill="#FF5C33">81.9%</text>
+    <path d="M0 21H330" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+    <text x="0"   y="36" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#8A8A8A">PUBLIC</text>
+    <text x="212" y="37" text-anchor="end" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">3,013</text>
+    <text x="330" y="36" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.2" fill="#8A8A8A">18.1%</text>
+    <path d="M0 43H330" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+    <text x="0"   y="58" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#8A8A8A">COMMITS</text>
+    <text x="212" y="59" text-anchor="end" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">2,984</text>
+    <text x="330" y="58" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.2" fill="#8A8A8A">—</text>
+    <path d="M0 65H330" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+    <text x="0"   y="80" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#8A8A8A">REPOS</text>
+    <text x="212" y="81" text-anchor="end" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">50</text>
+    <text x="330" y="80" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.2" fill="#8A8A8A">2 OPEN</text>
+    <path d="M0 87H330" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+    <text x="0"   y="102" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.8" fill="#8A8A8A">SOURCE</text>
+    <text x="212" y="103" text-anchor="end" font-family="'Helvetica Neue',Helvetica,'Arial Narrow',Arial,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">381.5 MB</text>
+    <text x="330" y="102" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.2" fill="#8A8A8A">14 LANG</text>
+    <path d="M0 109H330" stroke="#FFFFFF" stroke-width=".6" opacity=".45"/>
+</g>
+</svg>

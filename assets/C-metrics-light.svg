@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="152" viewBox="0 0 880 152" role="img">
+<rect width="880" height="152" fill="#FCFCFD"/>
+
+  
+  <text x="58" y="72" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="38" font-weight="300" fill="#0A0D14">16,687</text>
+  <text x="58" y="96" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="13.5" fill="#0B5FFF">contributions</text>
+  <text x="58" y="116" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#8B93A3">rolling 12 months</text>
+  <path d="M225.0 40v72" stroke="#D8DDE6" stroke-width="1"/>
+  <text x="249" y="72" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="38" font-weight="300" fill="#0A0D14">381.5</text>
+  <text x="249" y="96" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="13.5" fill="#0B5FFF">MB of source</text>
+  <text x="249" y="116" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#8B93A3">50 repositories</text>
+  <path d="M416.0 40v72" stroke="#D8DDE6" stroke-width="1"/>
+  <text x="440" y="72" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="38" font-weight="300" fill="#0A0D14">53</text>
+  <text x="440" y="96" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="13.5" fill="#0B5FFF">day streak</text>
+  <text x="440" y="116" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#8B93A3">186 active days</text>
+  <path d="M607.0 40v72" stroke="#D8DDE6" stroke-width="1"/>
+  <text x="631" y="72" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="38" font-weight="300" fill="#0A0D14">4</text>
+  <text x="631" y="96" font-family="'Avenir Next',Avenir,'Segoe UI',ui-sans-serif,system-ui,sans-serif" font-size="13.5" fill="#0B5FFF">preprints</text>
+  <text x="631" y="116" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" fill="#8B93A3">published on arXiv</text>
+</svg>
