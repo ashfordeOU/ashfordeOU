@@ -1,200 +1,200 @@
 {
-  "generatedAt": "2026-08-25T12:32:51.194Z",
+  "generatedAt": "2026-08-25T12:41:09.313Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 16692,
-  "private": 13674,
-  "public": 3018,
-  "commits": 2988,
+  "contributions": 16694,
+  "private": 13675,
+  "public": 3019,
+  "commits": 2989,
   "prs": 21,
   "activeDays": 186,
   "spanDays": 367,
   "streak": 53,
   "peakDay": 483,
   "repos": 51,
-  "publicRepos": 3,
-  "sourceMB": 381.5,
+  "publicRepos": 2,
+  "sourceMB": 381.6,
   "languages": 36,
   "langs": [
     {
       "name": "Python",
       "bytes": 126619626,
-      "pct": 33.18578927678121
+      "pct": 33.181353445670986
     },
     {
       "name": "TypeScript",
       "bytes": 88273219,
-      "pct": 23.13556386998931
+      "pct": 23.13247141818378
     },
     {
       "name": "HTML",
-      "bytes": 69472920,
-      "pct": 18.208185858665217
+      "bytes": 69514841,
+      "pct": 18.2167376559825
     },
     {
       "name": "JavaScript",
-      "bytes": 65113321,
-      "pct": 17.0655767836292
+      "bytes": 65122407,
+      "pct": 17.06567672139419
     },
     {
       "name": "Rust",
       "bytes": 9143410,
-      "pct": 2.3964000456865513
+      "pct": 2.3960797270770846
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 2.067752304363723
+      "pct": 2.067475914975379
     },
     {
       "name": "Kotlin",
       "bytes": 4463833,
-      "pct": 1.1699278064898255
+      "pct": 1.1697714262356915
     },
     {
       "name": "HCL",
       "bytes": 2409854,
-      "pct": 0.6315996149902409
+      "pct": 0.6315151912268641
     },
     {
       "name": "TeX",
       "bytes": 2182021,
-      "pct": 0.5718867713565305
+      "pct": 0.5718103292050195
     },
     {
       "name": "CSS",
       "bytes": 1900841,
-      "pct": 0.49819219079565175
+      "pct": 0.49812559914702864
     },
     {
       "name": "Shell",
       "bytes": 1670682,
-      "pct": 0.43786972487591597
+      "pct": 0.43781119632528764
     },
     {
       "name": "Java",
       "bytes": 614420,
-      "pct": 0.16103358769548023
+      "pct": 0.16101206288580547
     },
     {
       "name": "C",
       "bytes": 421240,
-      "pct": 0.11040296292575777
+      "pct": 0.11038820573877264
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.08202695877124741
+      "pct": 0.0820159945078225
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.08102420087514556
+      "pct": 0.0810133706469438
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.049160559678442954
+      "pct": 0.049153988554333214
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.04864188276354866
+      "pct": 0.04863538096921065
     },
     {
       "name": "Dockerfile",
       "bytes": 84327,
-      "pct": 0.02210129772728225
+      "pct": 0.022098343522299595
     },
     {
       "name": "Makefile",
       "bytes": 56604,
-      "pct": 0.01483536538184786
+      "pct": 0.014833382389225826
     },
     {
       "name": "Go",
       "bytes": 48376,
-      "pct": 0.012678885515374745
+      "pct": 0.012677190772051244
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.010696695769368892
+      "pct": 0.010695265978578786
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38365,
-      "pct": 0.010055098453723998
+      "pct": 0.01005375442305577
     },
     {
       "name": "CMake",
       "bytes": 34050,
-      "pct": 0.008924178348737186
+      "pct": 0.00892298548429686
     },
     {
       "name": "Go Template",
       "bytes": 25116,
-      "pct": 0.006582662655121385
+      "pct": 0.006581782773086634
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.0031398430724778703
+      "pct": 0.0031394233803781605
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.001914046240259256
+      "pct": 0.0019137903962355347
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.0011725924796549241
+      "pct": 0.0011724357432230292
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0011448108965428495
+      "pct": 0.0011446578735802842
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0010441681803632584
+      "pct": 0.0010440286099688307
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0009833632060047555
+      "pct": 0.0009832317632035774
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0007768359655112194
+      "pct": 0.0007767321285009071
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0006562743784210841
+      "pct": 0.0006561866564663534
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.0006148640941596898
+      "pct": 0.0006147819073762241
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.0005970419465028872
+      "pct": 0.0005969621419450292
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.0005868204206408975
+      "pct": 0.000586741982359491
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.00046075493500969083
+      "pct": 0.0004606933474711858
     }
   ],
   "days": [
@@ -1664,20 +1664,10 @@
     },
     {
       "date": "2026-08-25",
-      "contributionCount": 28
+      "contributionCount": 30
     }
   ],
   "products": [
-    {
-      "name": "ashfordeOU",
-      "desc": "GitHub profile README for ashfordeOU — figures regenerated nightly from live sources.",
-      "stars": 0,
-      "forks": 0,
-      "lang": "JavaScript",
-      "license": null,
-      "homepage": null,
-      "version": null
-    },
     {
       "name": "grasp",
       "desc": "GRASP — Code architecture visualizer + 150-tool MCP server. Dependency graphs, security scanning, multimodal knowledge graph, ORM tracking, git change impact, graph schema v3. Works with GitHub, GitLab & local dirs. 35 languages. Zero data collection.",
