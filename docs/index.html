@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ashforde — the figures behind the profile</title>
+<meta name="description" content="Every figure on the Ashforde GitHub profile, interactively. Contribution density, language mass, published research.">
+<link rel="icon" href="favicon.svg">
+<style>
+/* Self-hosted, as on ashforde.org — this page makes no third-party requests. */
+@font-face{font-family:EBG;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/eb-garamond-400-normal-latin.woff2) format('woff2')}
+@font-face{font-family:EBG;font-weight:600;font-style:normal;font-display:swap;src:url(fonts/eb-garamond-600-normal-latin.woff2) format('woff2')}
+@font-face{font-family:EBG;font-weight:400;font-style:italic;font-display:swap;src:url(fonts/eb-garamond-400-italic-latin.woff2) format('woff2')}
+@font-face{font-family:Tiro;font-weight:400;font-display:swap;src:url(fonts/tiro.woff2) format('woff2')}
+
+:root{
+  /* Text colours matched across modes by measured contrast ratio, not by eye.
+     --gold is the text gold (6.31 light / 6.29 dark); --goldG is the graphics
+     gold for rules, bars and seal accents, where the 3.0 floor applies. */
+  --paper:#F6F4F0; --panel:#EFEBE3; --ink:#212121; --ink2:#645C53; --ink3:#766E60;
+  --line:rgba(33,33,33,.16); --lineS:rgba(33,33,33,.30); --gold:#6B572F; --goldG:#9C7C3C; --coreHi:#C9AE79; --coreLo:#6E5626; --cellInk:#212121;
+  --ground-op:.05; --grain-op:.55;
+  --t0:#EFEBE3; --t1:#EFE9DC; --t2:#E0D3B8; --t3:#CDB88E; --t4:#B99C60;
+  --serif:EBG,'EB Garamond',Georgia,serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+:root:not([data-theme=light]) { }
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme=light]){
+    --paper:#11161E; --panel:#161E29; --ink:#ECE6D8; --ink2:#9D937E; --ink3:#887F6E;
+    --line:rgba(236,230,216,.16); --lineS:rgba(236,230,216,.30);
+    --gold:#B39454; --goldG:#C7AA66; --coreHi:#EBD8A6; --coreLo:#6B5327; --cellInk:#ECE6D8;
+  --ground-op:.075; --grain-op:.28;
+  --ground-op:.075; --grain-op:.28;
+  --t0:#161E29; --t1:#40341C; --t2:#554526; --t3:#67542D; --t4:#786235;
+  }
+}
+:root[data-theme=dark]{
+  --paper:#11161E; --panel:#161E29; --ink:#ECE6D8; --ink2:#9D937E; --ink3:#887F6E;
+  --line:rgba(236,230,216,.16); --lineS:rgba(236,230,216,.30);
+  --gold:#B39454; --goldG:#C7AA66; --coreHi:#EBD8A6; --coreLo:#6B5327; --cellInk:#ECE6D8;
+  --ground-op:.075; --grain-op:.28;
+  --t0:#161E29; --t1:#40341C; --t2:#554526; --t3:#67542D; --t4:#786235;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;position:relative}
+
+.ground{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden}
+.ground svg{position:absolute;left:50%;top:50%;width:min(1500px,148vmax);height:auto;
+  transform:translate(-50%,-50%);stroke:var(--ink);fill:none;stroke-width:1;
+  opacity:var(--ground-op);
+  -webkit-mask-image:radial-gradient(circle at 50% 50%,#000 32%,transparent 76%);
+          mask-image:radial-gradient(circle at 50% 50%,#000 32%,transparent 76%)}
+.ground .g-slow{transform-box:view-box;transform-origin:400px 400px;animation:gSpin 900s linear infinite}
+.ground .g-rev {transform-box:view-box;transform-origin:400px 400px;animation:gSpin 1400s linear infinite reverse}
+@keyframes gSpin{to{transform:rotate(360deg)}}
+
+/* grain: keeps the wide flat fields from banding, and gives paper a tooth */
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:var(--grain-op);
+  background-image:var(--grain);background-size:180px 180px}
+
+:root{--ground-op:.045;--grain-op:.5}
+@media (prefers-reduced-motion:reduce){.ground .g-slow,.ground .g-rev{animation:none}}
+.wrap{max-width:1040px;margin:0 auto;padding:0 32px}
+h1,h2,h3{font-weight:600;line-height:1.2;margin:0}
+a{color:inherit}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:3px;
+  text-transform:uppercase;color:var(--ink3)}
+.rule{height:1px;background:var(--lineS);margin:14px 0 0}
+.hair{height:1px;background:var(--line)}
+
+/* ── header ─────────────────────────────────────────────────────────── */
+header{padding:56px 0 40px}
+.brandrow{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.brandrow .seal-live{flex:0 0 64px}
+.word{font-size:44px;font-weight:600;letter-spacing:9px}
+.word sup{font-size:15px;letter-spacing:0;color:var(--gold);vertical-align:super}
+.attrib{margin-left:auto;font-family:var(--mono);font-size:9.5px;letter-spacing:2.4px;color:var(--ink3)}
+.tagline{font-size:31px;font-style:italic;margin:26px 0 0}
+.gold-rule{width:96px;height:2.5px;background:var(--goldG);margin:14px 0 20px}
+.stand{max-width:62ch;color:var(--ink2);margin:0}
+.motto{font-family:Tiro,serif;font-size:19px;color:var(--gold);margin:26px 0 2px}
+.motto+p{font-style:italic;font-size:13px;color:var(--ink3);margin:0}
+
+/* ── the armillary ──────────────────────────────────────────────────── */
+.hero-grid{display:grid;grid-template-columns:1fr minmax(300px,428px);gap:44px;align-items:center;margin-top:26px}
+.hero-fig{position:relative}
+.arm{width:100%;height:auto;display:block;overflow:visible}
+.arm-bezel circle,.arm-bezel line{fill:none;stroke:var(--ink3);stroke-width:1}
+
+/* orbit rings: thin, and shaded arc by arc so the far side falls into shadow */
+.arm .arc{fill:none;stroke:var(--goldG);stroke-linecap:round}
+/* frame bands: filled brass with a bright edge */
+.arm .arc.frame{fill:var(--goldG);stroke:var(--coreHi);stroke-width:.6}
+.arm .grad{stroke:var(--coreHi);stroke-width:.9}
+
+.arm .core-rim{fill:none;stroke:var(--coreHi);stroke-opacity:.55;stroke-width:1}
+
+.arm .arm-body{cursor:pointer;transition:opacity .25s}
+.arm .dot{fill:var(--coreHi);stroke:none}
+.arm .product .dot{fill:var(--gold)}
+.arm .halo{fill:none;stroke:var(--coreHi);stroke-width:1;stroke-opacity:.45;transition:.2s}
+.arm .arm-body:hover .halo,.arm .arm-body:focus-visible .halo{stroke-opacity:1;stroke-width:1.7}
+.arm.naming .arm-body:not(:hover):not(:focus-visible){opacity:.2!important}
+
+.orrery-cap{margin-top:12px;text-align:center;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:1.6px;text-transform:uppercase;color:var(--ink3);min-height:1.4em;
+  opacity:0;transition:opacity .18s}
+.orrery-cap.on{opacity:1}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero-fig{max-width:372px;margin:0 auto}
+}
+
+/* ── theme switch ───────────────────────────────────────────────────── */
+.themer{position:fixed;top:16px;right:16px;z-index:20;display:flex;
+  border:1px solid var(--lineS);border-radius:6px;overflow:hidden;background:var(--paper)}
+.themer button{appearance:none;background:none;border:0;border-right:1px solid var(--line);
+  color:var(--ink3);font-family:var(--mono);font-size:10px;letter-spacing:1.4px;
+  padding:8px 12px;cursor:pointer}
+.themer button:last-child{border-right:0}
+.themer button[aria-pressed=true]{background:var(--gold);color:var(--paper)}
+
+/* ── sections ───────────────────────────────────────────────────────── */
+section{padding:44px 0}
+.shead{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
+.shead em{font-size:15px;color:var(--ink3)}
+
+/* ── figure row ─────────────────────────────────────────────────────── */
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:28px;margin-top:26px}
+.fig b{display:block;font-size:34px;font-weight:600;font-variant-numeric:tabular-nums}
+.fig span{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--gold);margin-top:4px}
+.fig i{display:block;font-size:13px;color:var(--ink3);font-style:normal;margin-top:2px}
+
+/* ── heatmap ────────────────────────────────────────────────────────── */
+.hm-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:22px 0 14px}
+.chip{appearance:none;font-family:var(--mono);font-size:10px;letter-spacing:1.2px;
+  padding:6px 11px;border:1px solid var(--line);border-radius:4px;background:none;
+  color:var(--ink3);cursor:pointer;transition:.14s}
+.chip:hover{border-color:var(--gold);color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:var(--paper)}
+.hm{overflow-x:auto;padding-bottom:6px}
+.hm svg{display:block}
+.hm rect.d{cursor:pointer;transition:opacity .1s}
+.t0{fill:var(--t0)}.t1{fill:var(--t1)}.t2{fill:var(--t2)}.t3{fill:var(--t3)}.t4{fill:var(--t4)}
+.hm rect.d:hover{stroke:var(--ink);stroke-width:1.4}
+.hm rect.dim{opacity:.18}
+#tip{position:fixed;pointer-events:none;opacity:0;transition:opacity .1s;z-index:30;
+  background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:11px;
+  padding:7px 10px;border-radius:4px;white-space:nowrap;transform:translate(-50%,-140%)}
+#tip b{font-size:13px}
+.legend{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10px;
+  letter-spacing:1.2px;color:var(--ink3);margin-top:12px}
+.legend i{width:13px;height:13px;border-radius:2px;display:inline-block}
+
+/* ── languages ──────────────────────────────────────────────────────── */
+.lbar{display:flex;height:26px;border-radius:3px;overflow:hidden;margin:24px 0 18px;
+  background:var(--panel)}
+.lbar div{transition:.16s;cursor:pointer}
+.lbar div.dim{opacity:.22}
+.langs{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:2px}
+.lang{display:flex;align-items:baseline;gap:11px;padding:9px 10px;border-radius:4px;
+  cursor:pointer;transition:.14s;border:1px solid transparent}
+.lang:hover,.lang.on{background:var(--panel);border-color:var(--line)}
+.lang i{width:10px;height:10px;border-radius:2px;flex:0 0 10px;position:relative;top:1px}
+.lang b{font-weight:600}
+.lang span{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ink3);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ── projects ───────────────────────────────────────────────────────── */
+.projs{display:grid;gap:2px;margin-top:24px}
+.proj{display:grid;grid-template-columns:1fr auto;gap:18px;padding:22px 20px;
+  border-left:3px solid var(--goldG);background:var(--panel);border-radius:0 4px 4px 0;
+  text-decoration:none;transition:.16s}
+.proj:hover{transform:translateX(3px)}
+.proj.pre{border-left-color:var(--ink3);border-left-style:dashed}
+.proj h3{font-size:24px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;padding:3px 8px;
+  border-radius:2.5px;background:rgba(182,152,90,.18);color:var(--gold)}
+.tag.pre{background:none;border:1px dashed var(--ink3);color:var(--ink3)}
+.proj .site{font-family:var(--mono);font-size:10px;letter-spacing:1.3px;color:var(--gold);
+  display:block;margin:6px 0 10px}
+.proj p{margin:0;color:var(--ink2);font-size:15px;max-width:66ch}
+.facets{font-family:var(--mono);font-size:10.5px;letter-spacing:1px;color:var(--ink3);margin-top:12px}
+.meta{text-align:right;font-family:var(--mono);font-size:10px;letter-spacing:1.1px;
+  color:var(--ink3);white-space:nowrap}
+.meta b{display:block;font-size:13px;color:var(--ink);margin-bottom:5px}
+
+/* ── papers ─────────────────────────────────────────────────────────── */
+.papers{margin-top:24px}
+.paper{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;
+  border-bottom:1px solid var(--line);text-decoration:none;transition:.14s}
+.paper:hover{background:var(--panel)}
+.paper .id{font-family:var(--mono);font-size:11px;color:var(--gold)}
+.paper h4{margin:0;font-size:16px;font-weight:400}
+.paper .sub{font-family:var(--mono);font-size:10.5px;letter-spacing:1.2px;color:var(--ink3);margin-top:5px}
+
+.rows{margin-top:22px}
+.row{display:grid;grid-template-columns:34px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.rows.tight .row{grid-template-columns:3px 1fr;gap:18px}
+.rows.tight .row .n{background:var(--goldG);border-radius:2px;align-self:stretch;min-height:40px}
+.row .n{font-family:var(--mono);font-size:11px;color:var(--gold);padding-top:4px}
+.row h3{font-size:19px}
+.row p{margin:4px 0 0;color:var(--ink2);font-size:15px;max-width:74ch}
+.contact{font-size:18px;margin:22px 0 20px}
+.contact a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent}
+.contact a:hover{border-bottom-color:var(--gold)}
+.facts{border:1px solid var(--line);border-radius:5px;padding:14px 18px}
+.facts summary{cursor:pointer;font-weight:600;font-size:15px}
+.facts[open] summary{margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.facts table{border-collapse:collapse;width:100%;font-size:14.5px}
+.facts td{padding:7px 0;vertical-align:top;border-bottom:1px solid var(--line)}
+.facts td:first-child{color:var(--ink3);width:200px;font-family:var(--mono);font-size:11px;
+  letter-spacing:1px;text-transform:uppercase;padding-top:10px}
+.facts tr:last-child td{border-bottom:0}
+footer{padding:52px 0 68px;color:var(--ink3);font-size:14px}
+footer a{color:var(--gold)}
+.stamp{font-family:var(--mono);font-size:10px;letter-spacing:1.3px;margin-top:12px}
+@media (max-width:720px){
+  .wrap{padding:0 20px}.word{font-size:32px;letter-spacing:5px}.tagline{font-size:24px}
+  .proj{grid-template-columns:1fr}.meta{text-align:left}
+}
+
+/* ── Motion ───────────────────────────────────────────────────────────
+   Four ideas, each doing a job rather than decorating:
+   1. the seal breathes — spokes and rosette counter-rotate, ~2min a turn
+   2. the heatmap cascades along a diagonal, so the eye reads it in time order
+   3. figures count up, so the size of a number is felt before it is read
+   4. rows arrive on scroll, one beat apart
+   All one-shot except the seal. All off under prefers-reduced-motion.        */
+
+.seal-live{width:64px;height:64px;flex:0 0 64px}
+.seal-live svg{width:100%;height:100%;display:block}
+.seal-live .spin-a{transform-origin:50% 50%;animation:spinA 150s linear infinite}
+.seal-live .spin-b{transform-origin:50% 50%;animation:spinB 96s linear infinite}
+@keyframes spinA{to{transform:rotate(360deg)}}
+@keyframes spinB{to{transform:rotate(-360deg)}}
+
+/* the cell cascade: --i is the day index, so the wave travels with the calendar */
+g.cell{animation:cellIn .5s cubic-bezier(.22,.9,.3,1) backwards;
+  animation-delay:calc(var(--i) * 4.5ms)}
+@keyframes cellIn{from{opacity:0;transform:translateY(5px) scale(.82)}
+  to{opacity:1;transform:none}}
+g.cell rect.d{transition:stroke .12s}
+g.cell:hover rect.d{stroke:var(--ink);stroke-width:1.5}
+g.cell.dim{opacity:.16}
+g.cell{transition:opacity .22s}
+.cnum{font-family:var(--mono);font-size:10px;text-anchor:middle;fill:var(--cellInk);
+  pointer-events:none;font-variant-numeric:tabular-nums}
+.cnum.hi{font-weight:600}
+.mlab{font-family:var(--mono);font-size:10.5px;fill:var(--ink3);letter-spacing:1.2px}
+
+/* gold rules draw themselves in */
+.gold-rule{animation:drawRule .8s .15s cubic-bezier(.2,.8,.3,1) backwards}
+@keyframes drawRule{from{width:0}to{width:96px}}
+
+/* rows arrive as they enter the viewport */
+html.js-motion .reveal{opacity:0;transform:translateY(14px)}
+html.js-motion .reveal.in{opacity:1;transform:none;
+  transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+html.js-motion .rows .reveal.in{transition-delay:calc(var(--r,0) * 70ms)}
+
+/* bars grow from the baseline */
+.grow{transform-origin:bottom;animation:grow .7s cubic-bezier(.2,.85,.3,1) backwards;
+  animation-delay:calc(var(--i) * 18ms)}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  html.js-motion .reveal{opacity:1;transform:none}
+  .gold-rule{width:96px}
+}
+</style>
+</head>
+<script>
+  // Gate every entrance animation on JS actually running. Without this the page
+  // depends on IntersectionObserver to make content visible, and anything that
+  // stops the observer — no JS, an old browser, printing — hides the page.
+  if ('IntersectionObserver' in window &&
+      !matchMedia('(prefers-reduced-motion: reduce)').matches)
+    document.documentElement.classList.add('js-motion');
+</script>
+<body>
+<div class="ground" aria-hidden="true">
+  <svg viewBox="0 0 800 800">
+    <g class="g-slow">
+      <circle cx="400" cy="400" r="398"/><circle cx="400" cy="400" r="372" stroke-opacity=".6"/>
+      <circle cx="400" cy="400" r="385" stroke-width="17" stroke-dasharray="4.5 45.5" stroke-opacity=".5"/>
+      <circle cx="400" cy="400" r="320" stroke-opacity=".55"/>
+      <g id="spokes"></g>
+    </g>
+    <g class="g-rev">
+      <circle cx="400" cy="400" r="262" stroke-opacity=".5"/>
+      <circle cx="400" cy="400" r="210" stroke-opacity=".7"/>
+      <circle cx="400" cy="400" r="150" stroke-dasharray="2 10" stroke-opacity=".6"/>
+      <g id="chords"></g>
+    </g>
+    <circle cx="400" cy="400" r="96" stroke-opacity=".5"/>
+  </svg>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="themer" role="group" aria-label="Theme">
+  <button data-t="light">LIGHT</button><button data-t="dark">DARK</button><button data-t="auto" aria-pressed="true">AUTO</button>
+</div>
+<div id="tip" role="status" aria-live="polite"></div>
+
+<div class="wrap">
+<header>
+  <div class="brandrow">
+    <div class="seal-live" id="seal" role="img" aria-label="Ashforde seal"></div>
+    <div class="word">ASHFORDE<sup>™</sup></div>
+    <div class="attrib">A C. BAWEJA COMPANY</div>
+  </div>
+  <div class="hero-grid">
+    <div>
+  <p class="tagline">For the missions that cannot fail.</p>
+  <div class="gold-rule"></div>
+  <p class="stand">Sovereign, high-assurance systems for the decisions that cannot be wrong — in space, in law, in finance, and across the regulated enterprise.</p>
+  <p class="motto">यतो धर्मस्ततो जयः</p>
+  <p>Yato dharmas tato jayaḥ — Where there is dharma, there is victory</p>
+    </div>
+    <div class="hero-fig" id="orrery"></div>
+  </div>
+</header>
+
+<div class="hair"></div>
+
+<section id="standing">
+  <div class="shead"><h2 class="eyebrow">Standing</h2><em>Credible where it counts.</em></div>
+  <div class="rule"></div>
+  <div class="figs" id="figs"></div>
+</section>
+
+<section id="domains">
+  <div class="shead"><h2 class="eyebrow">Domains of work</h2><em>Where the cost of error is highest.</em></div>
+  <div class="rule"></div>
+  <div class="rows" id="domainRows"></div>
+</section>
+
+<section id="activity">
+  <div class="shead"><h2 class="eyebrow">Activity · every contributing day</h2><em>Hover any day. Blank is blank.</em></div>
+  <div class="rule"></div>
+  <div class="hm-tools" id="hmTools"></div>
+  <div class="hm" id="hm"></div>
+  <div class="legend">LESS <i style="background:var(--t0)"></i><i style="background:var(--t1)"></i><i style="background:var(--t2)"></i><i style="background:var(--t3)"></i><i style="background:var(--t4)"></i> MORE</div>
+</section>
+
+<section id="working-languages">
+  <div class="shead"><h2 class="eyebrow">Working languages</h2><em id="langNote"></em></div>
+  <div class="rule"></div>
+  <div class="lbar" id="lbar"></div>
+  <div class="langs" id="langs"></div>
+</section>
+
+<section id="projects">
+  <div class="shead"><h2 class="eyebrow">Open engineering</h2><em>A standard nobody can inspect is not a standard.</em></div>
+  <div class="rule"></div>
+  <div class="projs" id="projs"></div>
+</section>
+
+<section id="approach">
+  <div class="shead"><h2 class="eyebrow">The approach</h2><em>Engineered for assurance, not for show.</em></div>
+  <div class="rule"></div>
+  <div class="rows tight" id="approachRows"></div>
+</section>
+
+<section id="research">
+  <div class="shead"><h2 class="eyebrow">Research</h2><em>Methods published so results can be contested.</em></div>
+  <div class="rule"></div>
+  <div class="papers" id="papers"></div>
+</section>
+
+<section id="contact">
+  <div class="shead"><h2 class="eyebrow">Conversations held in confidence</h2><em>Disclosed privately, under appropriate terms.</em></div>
+  <div class="rule"></div>
+  <p class="contact">
+    <a href="mailto:contact@ashforde.org">contact@ashforde.org</a> ·
+    <a href="https://ashforde.org">ashforde.org</a> ·
+    <a href="https://www.linkedin.com/company/ashfordeou/">LinkedIn</a> ·
+    <a href="https://github.com/ashfordeOU">GitHub</a>
+  </p>
+  <details class="facts">
+    <summary>Company facts</summary>
+    <table>
+      <tr><td>Legal entity</td><td>Ashforde OÜ</td></tr>
+      <tr><td>Registry code</td><td>17321180, Estonian Commercial Register</td></tr>
+      <tr><td>Registered office</td><td>Ahtri tn 12, 15551 Tallinn, Estonia</td></tr>
+      <tr><td>Operating base</td><td>Frankfurt, Germany</td></tr>
+      <tr><td>Founder and director</td><td>Chakshu Baweja</td></tr>
+      <tr><td>Languages</td><td>English · Français · Deutsch · Italiano · Español · Eesti · Nederlands</td></tr>
+      <tr><td>Trademark</td><td>ASHFORDE™ — Ashforde OÜ</td></tr>
+    </table>
+  </details>
+</section>
+
+<footer>
+  <div class="hair" style="margin-bottom:24px"></div>
+  Ashforde OÜ · Tallinn, Estonia — operations, Frankfurt, Germany<br>
+  <a href="mailto:contact@ashforde.org">contact@ashforde.org</a> ·
+  <a href="https://ashforde.org">ashforde.org</a> ·
+  <a href="https://github.com/ashfordeOU">github.com/ashfordeOU</a>
+  <div class="stamp" id="stamp"></div>
+</footer>
+</div>
+
+<script type="module">
+const $ = (s) => document.querySelector(s);
+const fmt = (n) => n.toLocaleString('en-US');
+
+// ── the ground: spokes, chords, and a grain tile made in-page ────────
+(() => {
+  const NSVG = 'http://www.w3.org/2000/svg';
+  const spokes = document.getElementById('spokes'), chords = document.getElementById('chords');
+  if (spokes) for (let i = 0; i < 24; i++) {
+    const a = (i / 24) * Math.PI * 2;
+    const ln = document.createElementNS(NSVG, 'line');
+    ln.setAttribute('x1', 400 + 330 * Math.cos(a)); ln.setAttribute('y1', 400 + 330 * Math.sin(a));
+    ln.setAttribute('x2', 400 + 398 * Math.cos(a)); ln.setAttribute('y2', 400 + 398 * Math.sin(a));
+    ln.setAttribute('stroke-opacity', i % 6 ? '.42' : '.8');
+    spokes.appendChild(ln);
+  }
+  // a 12-point star polygon — the same geometry family as the seal's rosette
+  if (chords) for (let i = 0; i < 12; i++) {
+    const a = (i / 12) * Math.PI * 2, b = ((i + 5) / 12) * Math.PI * 2;
+    const ln = document.createElementNS(NSVG, 'line');
+    ln.setAttribute('x1', 400 + 210 * Math.cos(a)); ln.setAttribute('y1', 400 + 210 * Math.sin(a));
+    ln.setAttribute('x2', 400 + 210 * Math.cos(b)); ln.setAttribute('y2', 400 + 210 * Math.sin(b));
+    ln.setAttribute('stroke-opacity', '.5');
+    chords.appendChild(ln);
+  }
+
+  // grain: generated once into a data URI, so no image file and no request
+  try {
+    const N = 180, cv = document.createElement('canvas');
+    cv.width = cv.height = N;
+    const ctx = cv.getContext('2d'), img = ctx.createImageData(N, N);
+    for (let i = 0; i < img.data.length; i += 4) {
+      const v = 128 + (Math.random() - 0.5) * 255;
+      img.data[i] = img.data[i + 1] = img.data[i + 2] = v;
+      img.data[i + 3] = 12;
+    }
+    ctx.putImageData(img, 0, 0);
+    document.documentElement.style.setProperty('--grain', `url(${cv.toDataURL('image/png')})`);
+  } catch { document.querySelector('.grain')?.remove(); }
+})();
+
+// ── the seal, inlined so its rings can turn ──────────────────────────
+const sealCache = {};
+async function paintSeal(dark) {
+  const key = dark ? 'seal-dark' : 'seal-light';
+  if (!sealCache[key]) sealCache[key] = await (await fetch(`${key}.svg`)).text();
+  const host = document.getElementById('seal');
+  host.innerHTML = sealCache[key];
+  // groups in source order: spokes, rosette, glyph — turn the first two, leave the A
+  const gs = host.querySelectorAll('svg > g');
+  gs[0]?.classList.add('spin-a');
+  gs[1]?.classList.add('spin-b');
+}
+
+// ── theme ────────────────────────────────────────────────────────────
+const themer = $('.themer');
+const applyTheme = (t) => {
+  if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.dataset.theme = t;
+  themer.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.t === t)));
+  const dark = t === 'dark' || (t === 'auto' && matchMedia('(prefers-color-scheme:dark)').matches);
+  paintSeal(dark);
+  try { localStorage.setItem('ashforde-theme', t); } catch {}
+};
+themer.addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) applyTheme(b.dataset.t); });
+try { applyTheme(localStorage.getItem('ashforde-theme') || 'auto'); } catch { applyTheme('auto'); }
+
+// ── data ─────────────────────────────────────────────────────────────
+const D = await (await fetch('data.json')).json();
+
+$('#stamp').textContent = `FIGURES MEASURED ${D.generatedAt.slice(0, 10)} · REGENERATED DAILY, NOT TYPED`;
+$('#langNote').textContent = `${D.repos} repositories · ${D.sourceMB} MB · private counted, never named`;
+
+// ── standing ─────────────────────────────────────────────────────────
+const pctPrivate = (100 * D.private / D.contributions).toFixed(1);
+$('#figs').innerHTML = [
+  [fmt(D.contributions), 'Contributions, 12 months', `${fmt(D.private)} (${pctPrivate}%) in private repositories`, JSON.stringify([D.contributions, '', 0])],
+  [`${D.sourceMB} MB`, 'Source under management', `${D.repos} repositories · ${D.langs.length} languages`, JSON.stringify([D.sourceMB, ' MB', 1])],
+  [fmt(D.activeDays), 'Active days', `of ${D.spanDays} · longest run ${D.streak} days`, JSON.stringify([D.activeDays, '', 0])],
+  [String(D.papers.length), 'Preprints on arXiv', 'Signal processing · planetary · security', JSON.stringify([D.papers.length, '', 0])],
+].map(([b, s, i, meta]) => `<div class="fig"><b${meta ? ` data-count='${meta}'` : ''}>${meta ? '0' : b}</b><span>${s}</span><i>${i}</i></div>`).join('');
+
+// ── heatmap ──────────────────────────────────────────────────────────
+// Window starts January 2026: the 130 days before it carry one contribution
+// between them, so five empty months would read as missing data.
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const wdays = D.days.filter(d => d.date >= '2026-01-01');
+const weeks = [];
+for (let i = 0; i < wdays.length; i += 7) weeks.push(wdays.slice(i, i + 7));
+const step = (c) => c === 0 ? 0 : c < 25 ? 1 : c < 100 ? 2 : c < 250 ? 3 : 4;
+const RAMP = { light: ["#EFEBE3", "#EFE9DC", "#E0D3B8", "#CDB88E", "#B99C60"], dark: ["#161E29", "#40341C", "#554526", "#67542D", "#786235"] };
+const isDark = () => getComputedStyle(document.documentElement).getPropertyValue('--paper').trim().toLowerCase() === '#11161e';
+const CELL = 24, GAP = 4, P = CELL + GAP;
+const svgNS = 'http://www.w3.org/2000/svg';
+
+const hm = document.createElementNS(svgNS, 'svg');
+hm.setAttribute('width', weeks.length * P);
+hm.setAttribute('height', 7 * P + 24);
+hm.setAttribute('role', 'img');
+hm.setAttribute('aria-label', `Contributions per day, January to August 2026`);
+
+let lastMonth = -1, idx = 0;
+weeks.forEach((w, x) => {
+  const m = +w[0].date.slice(5, 7) - 1;
+  if (m !== lastMonth && x < weeks.length - 1) {
+    const lab = document.createElementNS(svgNS, 'text');
+    lab.setAttribute('x', x * P); lab.setAttribute('y', 12);
+    lab.setAttribute('class', 'mlab'); lab.textContent = MON[m];
+    hm.appendChild(lab); lastMonth = m;
+  }
+  w.forEach((d, r) => {
+    const n = step(d.contributionCount);
+    const g = document.createElementNS(svgNS, 'g');
+    g.setAttribute('class', 'cell');
+    g.style.setProperty('--i', idx++);          // drives the cascade
+    const rect = document.createElementNS(svgNS, 'rect');
+    rect.setAttribute('class', 'd');
+    rect.setAttribute('x', x * P); rect.setAttribute('y', 24 + r * P);
+    rect.setAttribute('width', CELL); rect.setAttribute('height', CELL);
+    rect.setAttribute('rx', 3);
+    rect.setAttribute('class', 'd t' + n);
+    rect.dataset.date = d.date; rect.dataset.n = d.contributionCount;
+    g.appendChild(rect);
+    if (d.contributionCount > 0) {              // the count, visible without hovering
+      const tx = document.createElementNS(svgNS, 'text');
+      tx.setAttribute('x', x * P + CELL / 2); tx.setAttribute('y', 24 + r * P + CELL / 2 + 3.4);
+      tx.setAttribute('class', 'cnum' + (n >= 3 ? ' hi' : ''));
+      tx.textContent = d.contributionCount;
+      g.appendChild(tx);
+    }
+    hm.appendChild(g);
+  });
+});
+$('#hm').appendChild(hm);
+
+const tip = $('#tip');
+const show = (el) => {
+  const n = +el.dataset.n;
+  const day = new Date(el.dataset.date + 'T00:00:00')
+    .toLocaleDateString('en-GB', { weekday:'short', day:'numeric', month:'short', year:'numeric' });
+  tip.innerHTML = n ? `<b>${fmt(n)}</b> contribution${n === 1 ? '' : 's'}<br>${day}` : `No contributions<br>${day}`;
+  const r = el.getBoundingClientRect();
+  tip.style.left = (r.left + r.width / 2) + 'px';
+  tip.style.top = r.top + 'px';
+  tip.style.opacity = 1;
+};
+hm.addEventListener('mouseover', (e) => { if (e.target.classList.contains('d')) show(e.target); });
+hm.addEventListener('mouseout',  () => { tip.style.opacity = 0; });
+
+const months = [...new Set(wdays.map(d => d.date.slice(0, 7)))];
+$('#hmTools').innerHTML = `<button class="chip" data-m="all" aria-pressed="true">ALL ${wdays.length} DAYS</button>` +
+  months.map(m => `<button class="chip" data-m="${m}">${MON[+m.slice(5) - 1].toUpperCase()} ${m.slice(2, 4)}</button>`).join('');
+$('#hmTools').addEventListener('click', (e) => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  $('#hmTools').querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', String(c === b)));
+  const m = b.dataset.m;
+  hm.querySelectorAll('g.cell').forEach(g => {
+    const d = g.querySelector('rect').dataset.date;
+    g.classList.toggle('dim', m !== 'all' && !d.startsWith(m));
+  });
+});
+
+// ── languages ────────────────────────────────────────────────────────
+const top = D.langs.slice(0, 10);
+$('#lbar').innerHTML = top.map((l, i) =>
+  `<div data-l="${i}" style="width:${l.pct}%;background:var(--goldG);opacity:${(1 - i * .085).toFixed(2)};box-shadow:inset -1px 0 0 var(--paper)" title="${l.name} ${l.pct.toFixed(1)}%"></div>`).join('');
+$('#langs').innerHTML = top.map((l, i) =>
+  `<div class="lang" data-l="${i}" tabindex="0" role="button">
+     <i style="background:var(--goldG);opacity:${(1 - i * .085).toFixed(2)}"></i>
+     <b>${l.name}</b><span>${l.pct.toFixed(1)}% · ${(l.bytes/1e6).toFixed(1)} MB</span>
+   </div>`).join('');
+const focusLang = (i) => {
+  $('#lbar').querySelectorAll('div').forEach(d => d.classList.toggle('dim', i !== null && +d.dataset.l !== i));
+  $('#langs').querySelectorAll('.lang').forEach(d => d.classList.toggle('on', i !== null && +d.dataset.l === i));
+};
+$('#langs').addEventListener('mouseover', (e) => { const l = e.target.closest('.lang'); if (l) focusLang(+l.dataset.l); });
+$('#langs').addEventListener('mouseleave', () => focusLang(null));
+$('#langs').addEventListener('focusin', (e) => { const l = e.target.closest('.lang'); if (l) focusLang(+l.dataset.l); });
+
+// ── domains + approach ───────────────────────────────────────────────
+const DOMAINS = [
+  ['Space & Mission Operations','Decision support for the people who fly spacecraft, and the model-based systems engineering that gets them there — always under human command.'],
+  ['Orbital Awareness','Orbit determination, conjunction assessment, and the situational picture that keeps assets safe in an increasingly crowded sky.'],
+  ['Legal Intelligence','Agentic reasoning over the law, held to a standard of evidence, citation and traceability that professional practice can defend.'],
+  ['Financial Intelligence','Reasoning over capital, risk and compliance, where every output must be explainable, auditable and defensible to a regulator.'],
+  ['Governance & Regulated Enterprise','Assurance for the decisions institutions and enterprises must stand behind — auditable, traceable, accountable by design.'],
+];
+document.getElementById('domainRows').innerHTML = DOMAINS.map(([h, p], i) =>
+  `<div class="row reveal"><div class="n">${String(i + 1).padStart(2, '0')}</div>
+   <div><h3>${h}</h3><p>${p}</p></div></div>`).join('');
+
+const APPROACH = [
+  ['Sovereign by design','Deployable entirely within your borders and control, up to and including fully air-gapped.'],
+  ['Assurance you can examine','Every consequential output evaluated, recorded, and open to audit.'],
+  ['Agentic, yet accountable','Autonomy bounded by design; command unambiguously human.'],
+  ['Built to a standard','The rigour of the space sector, applied everywhere else.'],
+];
+document.getElementById('approachRows').innerHTML = APPROACH.map(([h, p]) =>
+  `<div class="row reveal"><div class="n"></div><div><h3>${h}</h3><p>${p}</p></div></div>`).join('');
+
+// ── the armillary: rings are the domains, bodies the work on them ────
+import('./armillary.js').then(({ armillary }) => {
+  const host = document.getElementById('orrery');
+  if (!host) return;
+
+  // five domain rings, spread in inclination so they cross rather than nest,
+  // plus two frame rings — a meridian and an equator — to read as an instrument
+  // Hierarchy is the whole point: a graduated meridian and equator, drawn as
+  // solid brass bands, hold five much lighter orbit rings inside them.
+  const rings = [
+    { r: .80, inc: Math.PI / 2, node: 0, kind: 'frame', band: .034, graduated: true },
+    { r: .80, inc: 0,           node: 0, kind: 'frame', band: .026, graduated: true },
+    ...DOMAINS.map((_, i) => ({
+      r: .66 - i * .028,
+      inc: 0.34 + i * 0.44,
+      node: i * (Math.PI / DOMAINS.length) + 0.3,
+      kind: 'domain',
+    })),
+  ];
+
+  const bodies = [
+    ...DOMAINS.map((d, i) => ({
+      label: d[0], kind: 'domain', size: .0125,
+      r: .66 - i * .028, inc: 0.34 + i * 0.44,
+      node: i * (Math.PI / DOMAINS.length) + 0.3,
+      phase: i * 1.27, rate: 0.55 + i * 0.06,
+    })),
+    ...PROJ.map((p, i) => ({
+      label: p.name, kind: 'product', size: .019,
+      r: .40 + i * .062, inc: 0.18 + i * 0.34, node: 0.8 + i * 2.1,
+      phase: i * 2.1, rate: -0.9 - i * 0.12,
+    })),
+  ];
+
+  const { svg } = armillary(host, { rings, bodies, size: 400 });
+
+  const cap = document.createElement('div');
+  cap.className = 'orrery-cap';
+  host.appendChild(cap);
+  const name = (e) => {
+    const b = e.target.closest?.('.arm-body');
+    cap.textContent = b ? b.dataset.label : '';
+    cap.classList.toggle('on', !!b);
+    svg.classList.toggle('naming', !!b);
+  };
+  svg.addEventListener('mouseover', name);
+  svg.addEventListener('mouseout', (e) => { if (!e.relatedTarget?.closest?.('.arm-body')) name({ target: svg }); });
+  svg.addEventListener('focusin', name);
+}).catch(() => document.getElementById('orrery')?.remove());
+
+// ── projects ─────────────────────────────────────────────────────────
+const PROJ = [
+  { name:'YANA·Ops', pre:true, status:'PRE-RELEASE', site:'yanaops.com', href:'https://yanaops.com',
+    desc:'Open, vendor-neutral standard for spacecraft mission operations. Deterministic and air-gap-ready, with a conformance suite, an MCP server, a CLI and language SDKs. Published to be implemented by anyone, incumbents included.',
+    facets:['Conformance suite','CCSDS / PUS','ECSS-aligned','MCP server','No hidden egress'],
+    meta:['Not on npm, PyPI or crates','7 operations marketed','17 cross-validated','Next milestone 50'] },
+  { name:'Kshana', pre:false, status:'RELEASED', site:'kshana.dev', href:'https://kshana.dev', repo:'kshana',
+    desc:'Reproducible positioning, navigation and timing: orbit determination, clock modelling, INS, GNSS integrity and cislunar navigation. Every headline figure regenerates from a committed scenario and seed.',
+    facets:['Rust lib + CLI','Python','WASM','MCP server','JetBrains plugin'], meta:['AGPL-3.0'] },
+  { name:'Grasp', pre:false, status:'RELEASED', site:'ashfordeou.github.io/grasp', href:'https://ashfordeou.github.io/grasp', repo:'grasp',
+    desc:'Code-architecture intelligence across 35 languages: dependency graphs, security scanning, a multimodal knowledge graph and git change-impact analysis. No data leaves the machine.',
+    facets:['150 MCP tools','VS Code','JetBrains','GitHub Action','Browser extension'], meta:['Source-available'] },
+];
+$('#projs').innerHTML = PROJ.map(p => {
+  const live = D.products.find(x => x.name === p.repo);
+  const bits = [live?.version, ...(p.meta || []), live ? `★ ${live.stars}` : null].filter(Boolean);
+  return `<a class="proj${p.pre ? ' pre' : ''}" href="${p.href}">
+    <div>
+      <h3>${p.name}<span class="tag${p.pre ? ' pre' : ''}">${p.status}</span></h3>
+      <span class="site">${p.site.toUpperCase()}</span>
+      <p>${p.desc}</p>
+      <div class="facets">${p.facets.join('  ·  ')}</div>
+    </div>
+    <div class="meta">${bits.map((b, i) => i === 0 && live?.version ? `<b>${b}</b>` : `${b}<br>`).join('')}</div>
+  </a>`;
+}).join('');
+
+// ── papers ───────────────────────────────────────────────────────────
+const CAT = { 'eess.SP':'Signal Processing', 'astro-ph.EP':'Earth & Planetary Astrophysics',
+              'cs.CR':'Cryptography & Security', 'astro-ph.IM':'Instrumentation & Methods' };
+$('#papers').innerHTML = D.papers.map(p => {
+  const id = p.id.replace(/v\d+$/, '');
+  return `<a class="paper" href="https://arxiv.org/abs/${id}">
+    <div class="id">${id}</div>
+    <div><h4>${p.title}</h4>
+      <div class="sub">${p.date} · ${(CAT[p.cat] || p.cat).toUpperCase()}</div></div>
+  </a>`;
+}).join('');
+
+// ── count-up: the size of a number felt before it is read ────────────
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const easeOut = (u) => 1 - Math.pow(1 - u, 3);
+
+function countUp(el, target, suffix = '', decimals = 0) {
+  if (reduced) { el.textContent = target.toFixed(decimals) + suffix; return; }
+  const DUR = 1100;
+  let t0 = null;
+  const tick = (ts) => {
+    if (t0 === null) t0 = ts;
+    const u = Math.min(1, (ts - t0) / DUR);
+    const v = target * easeOut(u);
+    el.textContent = (decimals ? v.toFixed(decimals) : Math.round(v).toLocaleString('en-US')) + suffix;
+    if (u < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}
+
+// ── one observer drives every entrance ───────────────────────────────
+const seen = new WeakSet();
+const io = new IntersectionObserver((entries) => {
+  for (const e of entries) {
+    if (!e.isIntersecting || seen.has(e.target)) continue;
+    seen.add(e.target);
+    e.target.classList.add('in');
+    if (e.target.dataset.count !== undefined) {
+      const [n, suffix, dec] = JSON.parse(e.target.dataset.count);
+      countUp(e.target, n, suffix, dec);
+    }
+    if (e.target.id === 'hm') e.target.classList.add('played');
+  }
+}, { threshold: .18, rootMargin: '0px 0px -8% 0px' });
+
+// figures count, rows reveal in sequence
+document.querySelectorAll('.fig b[data-count]').forEach(el => io.observe(el));
+document.querySelectorAll('.rows .row').forEach((el, i) => { el.style.setProperty('--r', i % 6); io.observe(el); });
+document.querySelectorAll('.proj, .paper, .lang').forEach((el, i) => {
+  el.classList.add('reveal'); el.style.setProperty('--r', i % 5); io.observe(el);
+});
+
+// Backstop: whatever the observer has not reached in 3s gets shown anyway.
+setTimeout(() => document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in')), 3000);
+</script>
+</body>
+</html>

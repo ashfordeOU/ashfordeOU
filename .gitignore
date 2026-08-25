@@ -1,3 +1,4 @@
 .fontenv/
 node_modules/
-index.html
+# the studio preview's build output, at the repo root only — NOT docs/index.html
+/index.html
