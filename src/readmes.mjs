@@ -16,7 +16,7 @@ If you are evaluating us, these three tell you the most, fastest:
 - **[kshana.dev](https://kshana.dev)** — a validated PNT simulator you can run yourself and check our arithmetic.
 - **[ashforde.org](https://ashforde.org)** — the company in one page: premise, domains, approach, standing.
 
-**[→ Explore the figures interactively](https://ashfordeou.github.io/ashfordeOU/)** — hover any day, filter by language, sort the projects. The cards below are static images; that page is not.
+**[→ Explore the figures interactively](https://ashforde.org/githubprofile/)** — hover any day, filter by language, sort the projects. The cards below are static images; that page is not.
 
 %%DOMAINS%%
 
@@ -109,7 +109,7 @@ Every figure is measured, not typed. A scheduled workflow regenerates the whole 
 
 A GitHub README runs no JavaScript, so the cards above are images with links and tooltips.
 The genuinely interactive version lives at
-**[ashfordeou.github.io/ashfordeOU](https://ashfordeou.github.io/ashfordeOU/)**.
+**[ashforde.org/githubprofile](https://ashforde.org/githubprofile/)**.
 
 </details>`,
 };
