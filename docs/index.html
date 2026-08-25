@@ -492,10 +492,10 @@ $('#figs').innerHTML = [
 ].map(([b, s, i, meta]) => `<div class="fig"><b${meta ? ` data-count='${meta}'` : ''}>${meta ? '0' : b}</b><span>${s}</span><i>${i}</i></div>`).join('');
 
 // ── heatmap ──────────────────────────────────────────────────────────
-// Window starts January 2026: the 130 days before it carry one contribution
-// between them, so five empty months would read as missing data.
+// A full rolling year. The page can scroll horizontally, so it stays as one
+// band at 24px a cell rather than splitting the way the README card does.
 const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const wdays = D.days.filter(d => d.date >= '2026-01-01');
+const wdays = D.days;
 const weeks = [];
 for (let i = 0; i < wdays.length; i += 7) weeks.push(wdays.slice(i, i + 7));
 const step = (c) => c === 0 ? 0 : c < 25 ? 1 : c < 100 ? 2 : c < 250 ? 3 : 4;

@@ -184,45 +184,53 @@ export function commitments(mode, slice) {
 //    (one 53-week band caps the numerals at 7.5px on GitHub; two bands give 14.7px)
 export function activity(mode, slice) {
   const t = T[mode], PAD = 48;
-  const CELL = 23, GAP = 3.6, P = CELL + GAP;
-  const days = D.windowDays;
+  const CELL = 25, GAP = 4, P = CELL + GAP;
+  // A full rolling year. 53 weeks will not carry legible numerals in one band
+  // (14.8px a column), so it runs as two — 27 weeks then 26, at 25px a cell.
+  const days = D.days;
   const weeks = [];
   for (let i = 0; i < days.length; i += 7) weeks.push(days.slice(i, i + 7));
+  const bands = [weeks.slice(0, 27), weeks.slice(27)];
   const bandH = 7 * P;
-  const H = Math.round(62 + bandH + 52);
+  const H = Math.round(66 + bandH + 40 + bandH + 56);
 
   const total = days.reduce((a, d) => a + d.contributionCount, 0);
   const max = Math.max(...days.map(d => d.contributionCount));
   const active = days.filter(d => d.contributionCount > 0).length;
   const step = (c) => c === 0 ? 0 : c < 25 ? 1 : c < 100 ? 2 : c < 250 ? 3 : 4;
-  const fill = t.ramp;      // solid per tier; contrast verified against each
+  const fill = t.ramp;
 
   const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  let lastMon = -1;
-  const monthLabels = weeks.map((w, x) => {
-    const m = +w[0].date.slice(5, 7) - 1;
-    if (m === lastMon || x > weeks.length - 2) return '';
-    lastMon = m;
-    return `<text x="${PAD + x * P}" y="62" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${t.ink3}">${MON[m].toUpperCase()}</text>`;
-  }).join('');
+
+  const band = (ws, y0, offset) => {
+    let lastMon = -1;
+    const labels = ws.map((w, x) => {
+      const m = +w[0].date.slice(5, 7) - 1;
+      if (m === lastMon || x > ws.length - 2) return '';
+      lastMon = m;
+      return `<text x="${(PAD + x * P).toFixed(1)}" y="${y0 - 10}" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${t.ink3}">${MON[m].toUpperCase()}</text>`;
+    }).join('');
+    const cells = ws.map((w, x) => w.map((d, r) => {
+      const n = step(d.contributionCount), cx = PAD + x * P, cy = y0 + r * P;
+      const delay = (((x + offset) * 7 + r) * 4.5).toFixed(0);
+      return `<g class="cell" style="animation-delay:${delay}ms">` +
+        `<rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${CELL}" height="${CELL}" rx="3" fill="${fill[n]}"/>` +
+        (d.contributionCount > 0
+          ? `<text x="${(cx + CELL/2).toFixed(1)}" y="${(cy + CELL/2 + 3.4).toFixed(1)}" text-anchor="middle" font-family="${MONO}" font-size="9" font-weight="${n >= 3 ? 600 : 400}" fill="${t.cellInk}">${d.contributionCount}</text>`
+          : '') + `</g>`;
+    }).join('')).join('');
+    return labels + cells;
+  };
 
   return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${PAD}" y="34" font-family="${MONO}" font-size="10" letter-spacing="3.2" fill="${t.ink3}">${caps('Activity · every contributing day, counted')}</text>
   <text x="${W-PAD}" y="34" text-anchor="end" font-family="${SERIF}" font-size="17" font-weight="600" fill="${t.ink}">${nfmt(total)}</text>
   <path d="M${PAD} 46H${W-PAD}" stroke="${t.lineS}" stroke-width="1"/>
-  ${monthLabels}
-  ${weeks.map((w, x) => w.map((d, r) => {
-    const n = step(d.contributionCount), cx = PAD + x * P, cy = 72 + r * P;
-    const delay = ((x * 7 + r) * 4.5).toFixed(0);
-    return `<g class="cell" style="animation-delay:${delay}ms">` +
-      `<rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${CELL}" height="${CELL}" rx="3" fill="${fill[n]}"/>` +
-      (d.contributionCount > 0
-        ? `<text x="${(cx + CELL/2).toFixed(1)}" y="${(cy + CELL/2 + 3.2).toFixed(1)}" text-anchor="middle" font-family="${MONO}" font-size="10" font-weight="${n >= 3 ? 600 : 400}" fill="${t.cellInk}">${d.contributionCount}</text>`
-        : '') + `</g>`;
-  }).join('')).join('')}
-  <path d="M${PAD} ${H-40}H${W-PAD}" stroke="${t.line}" stroke-width="1"/>
-  <text x="${PAD}" y="${H-18}" font-family="${MONO}" font-size="10" letter-spacing="1.5" fill="${t.ink3}">JAN–AUG 2026 · ${active} ACTIVE DAYS · ${D.streak}-DAY LONGEST RUN · PEAK ${max} · ${nfmt(D.private)} IN PRIVATE REPOSITORIES</text>
-  <text x="${W-PAD}" y="${H-18}" text-anchor="end" font-family="${SERIF}" font-size="12.5" font-style="italic" fill="${t.ink3}">Blank is blank. Nothing is smoothed.</text>` + `</svg>`;
+  ${band(bands[0], 78, 0)}
+  ${band(bands[1], 78 + bandH + 40, 27)}
+  <path d="M${PAD} ${H-42}H${W-PAD}" stroke="${t.line}" stroke-width="1"/>
+  <text x="${PAD}" y="${H-18}" font-family="${MONO}" font-size="10" letter-spacing="1.4" fill="${t.ink3}">${active} ACTIVE DAYS · ${D.streak}-DAY LONGEST RUN · PEAK ${max}</text>
+  <text x="${W-PAD}" y="${H-18}" text-anchor="end" font-family="${SERIF}" font-size="13" font-style="italic" fill="${t.ink3}">${nfmt(D.private)} of them in private repositories.</text>` + `</svg>`;
 }
 
 // ── STACK · languages by mass. Brand-native, not a badge service ───────────
