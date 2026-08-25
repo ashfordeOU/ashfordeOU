@@ -1,3 +1,4 @@
 sh -c 'for f in src/*.mjs tools/*.mjs; do [ -e "$f" ] || continue; node --check "$f" || exit 1; done'
 sh -c 'for f in assets/*.svg; do [ -e "$f" ] || continue; python3 -c "import xml.dom.minidom,sys; xml.dom.minidom.parse(sys.argv[1])" "$f" || exit 1; done'
 sh -c 'grep -q "assets/hero-light.svg" README.md 2>/dev/null || exit 0; t=$(mktemp -d); cp -R src tools fonts brand data.json "$t"/ 2>/dev/null; (cd "$t" && node tools/render.mjs >/dev/null 2>&1) || { echo "render failed"; rm -rf "$t"; exit 1; }; diff -q "$t/README.md" README.md >/dev/null || { echo "README is stale — run: node tools/render.mjs"; rm -rf "$t"; exit 1; }; rm -rf "$t"'
+sh -c '[ -f tools/audit-freshness.mjs ] || exit 0; node tools/audit-freshness.mjs >/dev/null'

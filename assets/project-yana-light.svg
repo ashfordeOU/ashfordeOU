@@ -26,7 +26,7 @@
   <text x="48" y="64" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.3" fill="#6B572F">YANAOPS.COM</text>
 
   <text x="316" y="40" font-family="EBG,'EB Garamond',Georgia,'Iowan Old Style',Palatino,serif" font-size="17" fill="#212121">Open, vendor-neutral standard for spacecraft mission operations</text>
-  <text x="316" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing=".9" fill="#766E60">Conformance suite  ·  CCSDS / PUS  ·  ECSS-aligned  ·  MCP server  ·  No hidden egress</text>
+  <text x="316" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing=".9" fill="#766E60">Conformance suite  ·  CCSDS / PUS  ·  ECSS-aligned  ·  MCP server</text>
 
   <g text-anchor="end">
     <g transform="translate(746.9,26)">

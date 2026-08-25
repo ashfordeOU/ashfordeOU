@@ -38,7 +38,7 @@ standard nobody can inspect is not a standard.
 
 ## Working languages
 
-Measured across all **50** repositories, private included. Private repositories are
+Measured across all **{{REPOS}}** repositories, private included. Private repositories are
 counted, never named. Each badge links to that language's home.
 
 %%LANGUAGE_BADGES%%

@@ -68,7 +68,8 @@ const langs = Object.entries(langTotals)
   .map(([name, bytes]) => ({ name, bytes, pct: (100 * bytes) / totalBytes }));
 
 // ── public products, with their real latest tag ───────────────────────────
-const publicRepos = owned.filter(r => !r.private);
+// the profile repo itself is public but is not a product
+const publicRepos = owned.filter(r => !r.private && r.name !== USER);
 const products = [];
 for (const r of publicRepos) {
   let ver = null;

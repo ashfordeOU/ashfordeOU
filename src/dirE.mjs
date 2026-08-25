@@ -113,7 +113,7 @@ export function domains(mode, slice) {
 // ── STANDING — the numbers, framed as evidence rather than scoreboard ──────
 export function standing(mode, slice) {
   const t = T[mode], H = 336, PAD = 48;
-  const days = D.windowDays;
+  const days = D.days;
   // weekly totals — the activity card is daily, so this stays complementary
   const wk = [];
   for (let i = 0; i < days.length; i += 7)
@@ -142,7 +142,7 @@ export function standing(mode, slice) {
     <text x="${x}" y="${130}" font-family="${SERIF}" font-size="13" fill="${t.ink3}">${esc(sub)}</text>`;
   }).join('')}
 
-  <text x="${PAD}" y="${py-22}" font-family="${MONO}" font-size="10" letter-spacing="2.2" fill="${t.ink3}">${caps('Contributions per week · Jan–Aug 2026')}</text>
+  <text x="${PAD}" y="${py-22}" font-family="${MONO}" font-size="10" letter-spacing="2.2" fill="${t.ink3}">${caps('Contributions per week · rolling 12 months')}</text>
   ${wk.map((w, i) => {
     const h = Math.max(2, (w.n / max) * ph), x = PAD + i * bw;
     const peak = w.n === max;
@@ -290,6 +290,14 @@ export function research(mode, slice) {
 
 // ── PROJECT · one card per product, so each carries its own link and its own
 //    status. YANA's pre-release state travels with the card, not a footnote.
+/** Drop trailing facets until the line fits the space the right column leaves. */
+function fitFacets(list, budgetPx) {
+  const CH = 6.05;                       // mono advance at 10px, plus letter-spacing
+  const out = [...list];
+  while (out.length > 1 && out.join('  ·  ').length * CH > budgetPx) out.pop();
+  return out.join('  ·  ');
+}
+
 export function project(mode, key, slice) {
   const t = T[mode], PAD = 48;
   const p = D.products.find(x => x.key === key);
@@ -298,13 +306,16 @@ export function project(mode, key, slice) {
   const H = 104;
   const MID = PAD + 268;                 // description column
   const chipW = p.status.length * 6.1 + 18;
+  // reserve whatever the right-hand column actually needs, then fit the facets
+  // into what is left — this list used to run straight under the licence text
+  const rightW = Math.max(p.license.length, live?.version?.length ?? 0, 4) * 6.1 + 26;
 
   return open(H, t, [EBG_400(), EBG_600(), EBG_ITA()], slice) + `
   <text x="${PAD}" y="42" font-family="${SERIF}" font-size="26" font-weight="600" letter-spacing=".4" fill="${t.ink}">${esc(p.name)}</text>
   <text x="${PAD}" y="64" font-family="${MONO}" font-size="10" letter-spacing="1.3" fill="${t.gold}">${esc(p.site.toUpperCase())}</text>
 
   <text x="${MID}" y="40" font-family="${SERIF}" font-size="17" fill="${t.ink}">${esc(p.one)}</text>
-  <text x="${MID}" y="62" font-family="${MONO}" font-size="10" letter-spacing=".9" fill="${t.ink3}">${esc(p.facets.join('  ·  '))}</text>
+  <text x="${MID}" y="62" font-family="${MONO}" font-size="10" letter-spacing=".9" fill="${t.ink3}">${esc(fitFacets(p.facets, W - PAD - MID - rightW))}</text>
 
   <g text-anchor="end">
     ${live?.version

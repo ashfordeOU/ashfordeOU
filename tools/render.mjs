@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import { readmes } from '../src/readmes.mjs';
 import * as E from '../src/dirE.mjs';
 import { languageBadges } from '../src/badges.mjs';
+import { D } from '../src/data.mjs';
 
 const mod = { E }[process.env.PROFILE_DIRECTION || 'E'];
 fs.mkdirSync('assets', { recursive: true });
@@ -64,7 +65,12 @@ const readme = readmes.E
     const [href, title] = LINKS[key] ?? [null, null];
     return card(key, href, title);
   })
-  .replace('%%LANGUAGE_BADGES%%', badges);
+  .replace('%%LANGUAGE_BADGES%%', badges)
+  // any figure in the prose comes from data.json too, never typed
+  .replace(/\{\{REPOS\}\}/g, String(D.repos))
+  .replace(/\{\{CONTRIBUTIONS\}\}/g, D.contributions.toLocaleString('en-US'))
+  .replace(/\{\{PAPERS\}\}/g, String(D.papers.length))
+  .replace(/\{\{SOURCE_MB\}\}/g, String(D.sourceMB));
 
 fs.writeFileSync('README.md', readme.replace(/<!--[\s\S]*?-->\n/, '') + '\n');
 console.log(`${n} SVGs + README.md rendered`);

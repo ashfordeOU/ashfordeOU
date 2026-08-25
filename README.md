@@ -55,7 +55,7 @@ standard nobody can inspect is not a standard.
 
 ## Working languages
 
-Measured across all **50** repositories, private included. Private repositories are
+Measured across all **51** repositories, private included. Private repositories are
 counted, never named. Each badge links to that language's home.
 
 <a href="https://www.python.org" title="Python — 33.2% of 381.5 MB across 51 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-python-dark.svg"><img alt="Python 33.2%" src="assets/lang-python-light.svg"></picture></a>

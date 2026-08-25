@@ -26,7 +26,7 @@
   <text x="48" y="64" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="1.3" fill="#B39454">ASHFORDEOU.GITHUB.IO/GRASP</text>
 
   <text x="316" y="40" font-family="EBG,'EB Garamond',Georgia,'Iowan Old Style',Palatino,serif" font-size="17" fill="#ECE6D8">Code-architecture intelligence across 35 languages</text>
-  <text x="316" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing=".9" fill="#887F6E">150 MCP tools  ·  VS Code  ·  JetBrains  ·  GitHub Action  ·  Browser extension</text>
+  <text x="316" y="62" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing=".9" fill="#887F6E">150 MCP tools  ·  VS Code  ·  JetBrains  ·  GitHub Action</text>
 
   <g text-anchor="end">
     <text x="832" y="40" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#ECE6D8">v3.21.0</text>
