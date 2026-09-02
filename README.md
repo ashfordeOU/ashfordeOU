@@ -11,7 +11,7 @@ If you are evaluating us, these four tell you the most, fastest:
 
 - **[yanaops.com](https://yanaops.com)** — the open mission-operations standard. **Pre-release**: read it, implement it, hold us to it.
 - **[kshana.dev](https://kshana.dev)** — a validated PNT simulator you can run yourself and check our arithmetic.
-- **[ashforde.org/aeroagentskills](https://ashforde.org/aeroagentskills)** — 330 verified aerospace-engineering skills for AI agents. Install it and read the gates yourself.
+- **[ashforde.org/aeroagentskills](https://ashforde.org/aeroagentskills)** — verified aerospace-engineering skills for AI agents. Install it and read the gates yourself.
 - **[ashforde.org](https://ashforde.org)** — the company in one page: premise, domains, approach, standing.
 
 **[→ Explore the figures interactively](https://ashforde.org/githubprofile/)** — hover any day, filter by language, sort the projects. The cards below are static images; that page is not.
