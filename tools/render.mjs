@@ -21,7 +21,8 @@ const write = (name, svg) => { fs.writeFileSync(`assets/${name}.svg`, svg); n++;
 // The cards share one continuous engraved ground, so each needs to know where
 // it sits in the column. Measure the stack first, then render it for real.
 const ORDER = ['hero', 'domains', 'project-yana', 'project-kshana', 'project-grasp',
-               'stack', 'activity', 'standing', 'research', 'commitments'];
+               'project-aero-agent-skills', 'stack', 'activity', 'standing', 'research',
+               'commitments'];
 const GAP = 16;                                     // GitHub's margin between images
 // read the ROOT <svg> height — the first height= in the file may be a cell rect
 const rootH = (svg) => Math.round(+svg.match(/<svg\b[^>]*?\sheight="([\d.]+)"/)[1]);
@@ -57,6 +58,7 @@ const LINKS = {
   'project-yana':   ['https://yanaops.com', 'YANA·Ops — pre-release, not on any package registry'],
   'project-kshana': ['https://kshana.dev', 'Kshana — reproducible PNT simulator'],
   'project-grasp':  ['https://ashfordeou.github.io/grasp', 'Grasp — code-architecture intelligence'],
+  'project-aero-agent-skills': ['https://ashforde.org/aeroagentskills', 'Aero Agent Skills — standards-mapped aerospace skills for AI agents'],
 };
 
 const readme = readmes.E

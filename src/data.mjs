@@ -93,6 +93,15 @@ export const D = {
       facets:['150 MCP tools','VS Code','JetBrains','GitHub Action','Browser extension'],
       figures:[['MCP tools','150'],['Languages','35']],
       license:'Source-available' },
+
+    { key:'aero-agent-skills', name:'Aero Agent Skills', repo:'aero-agent-skills',
+      site:'ashforde.org/aeroagentskills', href:'https://ashforde.org/aeroagentskills',
+      status:'RELEASED', statusNote:null,
+      one:'Standards-mapped aerospace engineering skills for AI agents',
+      long:'330 verified SKILL.md workflows across 12 domains, mapped to 25 standards from DO-178C to AS9100. Every skill carries verification gates and a human sign-off stop, replayed by a deterministic offline battery on every push.',
+      facets:['npm CLI','MCP server','Claude Code plugin','Fail-closed gates','12 domains'],
+      figures:[['Verified skills','330'],['Standards mapped','25']],
+      license:'Apache-2.0' },
   ],
 
   yana: { status:'Public preview', marketed:7, crossval:17, next:50, then:150,

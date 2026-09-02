@@ -36,6 +36,8 @@ standard nobody can inspect is not a standard.
 
 %%PROJECT-GRASP%%
 
+%%PROJECT-AERO-AGENT-SKILLS%%
+
 ## Working languages
 
 Measured across all **{{REPOS}}** repositories, private included. Private repositories are

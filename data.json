@@ -1,200 +1,200 @@
 {
-  "generatedAt": "2026-09-02T04:33:11.205Z",
+  "generatedAt": "2026-09-02T18:14:33.369Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 16975,
-  "private": 13945,
-  "public": 3030,
-  "commits": 2998,
+  "contributions": 16990,
+  "private": 13952,
+  "public": 3038,
+  "commits": 3005,
   "prs": 21,
-  "activeDays": 193,
+  "activeDays": 194,
   "spanDays": 368,
   "streak": 53,
   "peakDay": 483,
-  "repos": 51,
-  "publicRepos": 2,
-  "sourceMB": 412.4,
+  "repos": 52,
+  "publicRepos": 3,
+  "sourceMB": 417.8,
   "languages": 36,
   "langs": [
     {
       "name": "Python",
-      "bytes": 129840386,
-      "pct": 31.485457015154424
+      "bytes": 135105618,
+      "pct": 32.33632424634881
     },
     {
       "name": "TypeScript",
       "bytes": 92452692,
-      "pct": 22.419182117198197
+      "pct": 22.12772696069396
     },
     {
       "name": "HTML",
-      "bytes": 89350286,
-      "pct": 21.66686865167479
+      "bytes": 89425727,
+      "pct": 21.403249894741386
     },
     {
       "name": "JavaScript",
-      "bytes": 67207869,
-      "pct": 16.297475197583204
+      "bytes": 67237126,
+      "pct": 16.092606213670628
     },
     {
       "name": "Rust",
       "bytes": 9143410,
-      "pct": 2.2172180120207985
+      "pct": 2.1883936053444364
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 1.9131437014804797
+      "pct": 1.8882723393578467
     },
     {
       "name": "Kotlin",
       "bytes": 4463833,
-      "pct": 1.0824507410531559
+      "pct": 1.068378601913889
     },
     {
       "name": "CSS",
       "bytes": 3117280,
-      "pct": 0.7559203146869925
+      "pct": 0.7460931554057081
     },
     {
       "name": "HCL",
       "bytes": 2409854,
-      "pct": 0.5843740677865664
+      "pct": 0.57677705401089
     },
     {
       "name": "TeX",
       "bytes": 2182021,
-      "pct": 0.5291260332641361
+      "pct": 0.522247258203151
     },
     {
       "name": "Shell",
-      "bytes": 1810927,
-      "pct": 0.43913812930348617
+      "bytes": 1867932,
+      "pct": 0.4470728583775904
     },
     {
       "name": "Java",
       "bytes": 708516,
-      "pct": 0.17181056487731908
+      "pct": 0.1695769831697604
     },
     {
       "name": "C",
       "bytes": 421240,
-      "pct": 0.10214798585906583
+      "pct": 0.10082003566670317
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.0758936934533367
+      "pct": 0.07490705584151416
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.07496591310508681
+      "pct": 0.07399133687735879
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.04548475893925277
+      "pct": 0.044893445328172014
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.045004864190380175
+      "pct": 0.04441978933495103
     },
     {
       "name": "Dockerfile",
       "bytes": 95760,
-      "pct": 0.02322118299749346
+      "pct": 0.02291930162245631
     },
     {
       "name": "Makefile",
-      "bytes": 56604,
-      "pct": 0.013726105288117374
+      "bytes": 61356,
+      "pct": 0.014685011177395879
     },
     {
       "name": "Go",
       "bytes": 48376,
-      "pct": 0.011730868302910856
+      "pct": 0.01157836398588081
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.00989688953296471
+      "pct": 0.009768227413505736
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38365,
-      "pct": 0.009303265305961117
+      "pct": 0.009182320454736177
     },
     {
       "name": "CMake",
       "bytes": 34050,
-      "pct": 0.008256905608444573
+      "pct": 0.008149563703473656
     },
     {
       "name": "Go Template",
       "bytes": 25116,
-      "pct": 0.0060904681721496
+      "pct": 0.006011290513258278
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.0029050728102545074
+      "pct": 0.002867306113586326
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.0017709304451826934
+      "pct": 0.0017479078921136008
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.0010849161730449638
+      "pct": 0.0010708119826531904
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0010592118560260174
+      "pct": 0.001045441828392744
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0009660943302215323
+      "pct": 0.0009535348544681071
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0009098358250479892
+      "pct": 0.000898007724388639
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0007187509023033689
+      "pct": 0.0007094069549807905
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0006072038661834129
+      "pct": 0.0005993100591335693
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.0005688898842117758
+      "pct": 0.0005614941688208281
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.000552400322350565
+      "pct": 0.0005452189755216736
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.000542943073636047
+      "pct": 0.0005358846734824528
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.0004263036728236581
+      "pct": 0.00042076161499872796
     }
   ],
   "days": [
@@ -1668,10 +1668,20 @@
     },
     {
       "date": "2026-09-02",
-      "contributionCount": 0
+      "contributionCount": 15
     }
   ],
   "products": [
+    {
+      "name": "aero-agent-skills",
+      "desc": "The aerospace knowledge layer for AI agents: standards-mapped SKILL.md workflows with verification gates, eval-gated (330 skills, 674-task Hit@1 corpus), Apache-2.0",
+      "stars": 0,
+      "forks": 0,
+      "lang": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://ashforde.org/aeroagentskills",
+      "version": null
+    },
     {
       "name": "grasp",
       "desc": "GRASP — Code architecture visualizer + 150-tool MCP server. Dependency graphs, security scanning, multimodal knowledge graph, ORM tracking, git change impact, graph schema v3. Works with GitHub, GitLab & local dirs. 35 languages. Zero data collection.",

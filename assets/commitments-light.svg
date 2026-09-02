@@ -21,7 +21,7 @@
   .arm .grad{stroke:var(--ch);stroke-width:.9}
   @media (prefers-reduced-motion:reduce){ .arm-body animateMotion{display:none} }</style></defs>
 <rect width="880" height="294" fill="#F6F4F0"/>
-<g class="ground" stroke="#212121" fill="none" stroke-width="1" opacity=".05"><circle cx="440.0" cy="-1704.3" r="1403.9" stroke-opacity=".55"/><circle cx="440.0" cy="-1704.3" r="1312.7" stroke-opacity=".34"/><circle cx="440.0" cy="-1704.3" r="1357.6" stroke-opacity=".5" stroke-width="60.4" stroke-dasharray="15.4 160.0"/></g>
+<g class="ground" stroke="#212121" fill="none" stroke-width="1" opacity=".05"><circle cx="440.0" cy="-1783.5" r="1459.1" stroke-opacity=".55"/><circle cx="440.0" cy="-1783.5" r="1364.3" stroke-opacity=".34"/><circle cx="440.0" cy="-1783.5" r="1411.0" stroke-opacity=".5" stroke-width="62.7" stroke-dasharray="16.1 166.3"/></g>
   <text x="56" y="40" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" letter-spacing="3.2" fill="#766E60">THE APPROACH</text>
   <text x="824" y="40" text-anchor="end" font-family="EBG,'EB Garamond',Georgia,'Iowan Old Style',Palatino,serif" font-size="14" font-style="italic" fill="#766E60">Engineered for assurance, not for show.</text>
   <path d="M56 56H824" stroke="rgba(33,33,33,.30)" stroke-width="1"/>
