@@ -1,231 +1,203 @@
 {
-  "generatedAt": "2026-09-05T04:29:38.600Z",
+  "generatedAt": "2026-09-06T04:29:28.293Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 17190,
-  "private": 14070,
-  "public": 3120,
-  "commits": 3086,
+  "contributions": 17303,
+  "private": 14115,
+  "public": 3188,
+  "commits": 3154,
   "prs": 21,
-  "activeDays": 197,
-  "spanDays": 371,
+  "activeDays": 198,
+  "spanDays": 365,
   "streak": 53,
   "peakDay": 483,
   "repos": 54,
   "publicRepos": 4,
-  "sourceMB": 427.1,
+  "sourceMB": 431.5,
   "languages": 36,
   "langs": [
     {
       "name": "Python",
-      "bytes": 139343636,
-      "pct": 32.62895913015966
+      "bytes": 142947149,
+      "pct": 33.13106056276325
     },
     {
       "name": "TypeScript",
-      "bytes": 93696226,
-      "pct": 21.940078618331754
+      "bytes": 93760042,
+      "pct": 21.730896010169648
     },
     {
       "name": "HTML",
-      "bytes": 92913809,
-      "pct": 21.756866431190733
+      "bytes": 93359280,
+      "pct": 21.6380108411674
     },
     {
       "name": "JavaScript",
-      "bytes": 67287419,
-      "pct": 15.756144360442327
+      "bytes": 67514026,
+      "pct": 15.647820190117766
     },
     {
       "name": "Rust",
       "bytes": 9143410,
-      "pct": 2.141037508166452
+      "pct": 2.119180918118032
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 1.847410764829961
+      "pct": 1.8285516371482111
     },
     {
       "name": "Kotlin",
-      "bytes": 4471392,
-      "pct": 1.0470292796358698
+      "bytes": 4480265,
+      "pct": 1.0383972824265875
     },
     {
       "name": "CSS",
-      "bytes": 3317412,
-      "pct": 0.7768112249195307
+      "bytes": 3323405,
+      "pct": 0.7702702229450564
     },
     {
       "name": "HCL",
       "bytes": 2409854,
-      "pct": 0.564295793714266
+      "pct": 0.5585352305376673
     },
     {
       "name": "TeX",
       "bytes": 2182021,
-      "pct": 0.5109460042376827
+      "pct": 0.5057300576188563
     },
     {
       "name": "Shell",
-      "bytes": 1881642,
-      "pct": 0.4406087115136846
+      "bytes": 1904774,
+      "pct": 0.441472132839647
     },
     {
       "name": "Java",
-      "bytes": 708516,
-      "pct": 0.1659073946302377
+      "bytes": 733838,
+      "pct": 0.17008265915997428
     },
     {
       "name": "C",
       "bytes": 421240,
-      "pct": 0.09863832420727456
+      "pct": 0.09763138369033433
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.07328609249786139
+      "pct": 0.07253795797248912
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.07239018938225739
+      "pct": 0.07165120060377006
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.043921966360940784
+      "pct": 0.043473592892839474
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.043458560123151885
+      "pct": 0.04301491729621244
     },
     {
       "name": "Dockerfile",
       "bytes": 95760,
-      "pct": 0.022423335690078365
+      "pct": 0.022194429071755804
     },
     {
       "name": "Makefile",
-      "bytes": 61356,
-      "pct": 0.01436723250418179
+      "bytes": 63146,
+      "pct": 0.014635436697630452
     },
     {
       "name": "Go",
       "bytes": 48376,
-      "pct": 0.011327812106758888
+      "pct": 0.011212173149282152
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.009556846277351382
+      "pct": 0.009459286066265348
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38365,
-      "pct": 0.008983618146928326
+      "pct": 0.00889190968397986
     },
     {
       "name": "CMake",
       "bytes": 34050,
-      "pct": 0.007973209902330497
+      "pct": 0.007891816101642494
     },
     {
       "name": "Go Template",
       "bytes": 25116,
-      "pct": 0.005881208220467922
+      "pct": 0.005821170431978058
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.0028052585794396284
+      "pct": 0.0027766213479494
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.0017100837567318537
+      "pct": 0.0016926265195387703
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.00104763997365717
+      "pct": 0.001036945234618165
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.001022818820950943
+      "pct": 0.0010123774664309666
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0009329006828453656
+      "pct": 0.0009233772496018706
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0008785751410732459
+      "pct": 0.0008696062852676252
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0006940556285024256
+      "pct": 0.0006869704236495845
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0005863411922301194
+      "pct": 0.0005803555805730632
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.000549343624988762
+      "pct": 0.0005437356996902581
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.0005334206213658993
+      "pct": 0.0005279752446267724
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.0005242883104645517
+      "pct": 0.0005189361601050673
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.0004116564760145966
+      "pct": 0.00040745411767070496
     }
   ],
   "days": [
-    {
-      "date": "2025-08-31",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-01",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-02",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-03",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-04",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-05",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-06",
-      "contributionCount": 0
-    },
     {
       "date": "2025-09-07",
       "contributionCount": 0
@@ -1676,27 +1648,31 @@
     },
     {
       "date": "2026-09-04",
-      "contributionCount": 45
+      "contributionCount": 51
     },
     {
       "date": "2026-09-05",
-      "contributionCount": 7
+      "contributionCount": 80
+    },
+    {
+      "date": "2026-09-06",
+      "contributionCount": 34
     }
   ],
   "products": [
     {
       "name": "aero-agent-roles",
-      "desc": "Professional engineering roles for AI agents — role bank binding + ordering Aero Agent Skills leaves into end-to-end deliverables",
+      "desc": "🧑‍🚀 The role layer for aerospace engineering agents — 25 roles binding 466 Aero Agent Skills across 12 domains, verified by 966 offline tests, gated on 22 standards. Every role ends at the human sign-off. Apache-2.0 · by Ashforde OÜ",
       "stars": 0,
       "forks": 0,
-      "lang": null,
-      "license": null,
-      "homepage": null,
-      "version": null
+      "lang": "Python",
+      "license": "Apache-2.0",
+      "homepage": "https://ashforde.org/aeroagentroles",
+      "version": "v1.1.0"
     },
     {
       "name": "aero-agent-skills",
-      "desc": "🚀 The aerospace knowledge layer for AI agents — 506 verified skills in 85 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1028-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
+      "desc": "🚀 The aerospace knowledge layer for AI agents — 567 verified skills in 85 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1150-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
       "stars": 0,
       "forks": 0,
       "lang": "Python",
@@ -1707,7 +1683,7 @@
     {
       "name": "grasp",
       "desc": "GRASP — Code architecture visualizer + 150-tool MCP server. Dependency graphs, security scanning, multimodal knowledge graph, ORM tracking, git change impact, graph schema v3. Works with GitHub, GitLab & local dirs. 35 languages. Zero data collection.",
-      "stars": 18,
+      "stars": 19,
       "forks": 2,
       "lang": "HTML",
       "license": "NOASSERTION",
