@@ -102,6 +102,15 @@ export const D = {
       facets:['npm CLI','MCP server','Claude Code plugin','Fail-closed gates','12 domains'],
       figures:[['Verified skills','330'],['Standards mapped','25']],
       license:'Apache-2.0' },
+
+    { key:'aero-agent-roles', name:'Aero Agent Roles', repo:'aero-agent-roles',
+      site:'ashforde.org/aeroagentroles', href:'https://ashforde.org/aeroagentroles',
+      status:'RELEASED', statusNote:null,
+      one:'The role layer for aerospace engineering agents',
+      long:'Roles bind Aero Agent Skills into end-to-end deliverables: audit plans, certification plans, compliance matrices. Each role orders the skills it needs, carries the same fail-closed gates, and ends at the human sign-off. Built to run alongside the skills, never instead of them.',
+      facets:['npm CLI','MCP server','Claude Code plugin','Binds Aero Agent Skills','12 domains'],
+      figures:[['Roles','35'],['Skills bound','562']],
+      license:'Apache-2.0' },
   ],
 
   yana: { status:'Public preview', marketed:7, crossval:17, next:50, then:150,

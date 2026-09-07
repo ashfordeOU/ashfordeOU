@@ -674,6 +674,9 @@ const PROJ = [
   { name:'Aero Agent Skills', pre:false, status:'RELEASED', site:'ashforde.org/aeroagentskills', href:'https://ashforde.org/aeroagentskills', repo:'aero-agent-skills',
     desc:'Verified SKILL.md workflows across every domain of aerospace engineering, mapped to the standards that govern it — DO-178C to AS9100. Every skill carries verification gates and a human sign-off stop, replayed by a deterministic offline battery on every push.',
     facets:['npm CLI','MCP server','Claude Code plugin','Fail-closed gates','12 domains'], meta:['Apache-2.0'] },
+  { name:'Aero Agent Roles', pre:false, status:'RELEASED', site:'ashforde.org/aeroagentroles', href:'https://ashforde.org/aeroagentroles', repo:'aero-agent-roles',
+    desc:'The role layer for aerospace engineering agents. Roles bind Aero Agent Skills into end-to-end deliverables: audit plans, certification plans, compliance matrices. Each role orders the skills it needs, carries the same fail-closed gates, and ends at the human sign-off.',
+    facets:['npm CLI','MCP server','Claude Code plugin','Binds Aero Agent Skills','12 domains'], meta:['Apache-2.0'] },
 ];
 $('#projs').innerHTML = PROJ.map(p => {
   const live = D.products.find(x => x.name === p.repo);
