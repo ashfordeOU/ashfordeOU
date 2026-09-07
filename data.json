@@ -1,200 +1,200 @@
 {
-  "generatedAt": "2026-09-06T04:29:28.293Z",
+  "generatedAt": "2026-09-07T04:32:46.894Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 17303,
-  "private": 14115,
-  "public": 3188,
-  "commits": 3154,
+  "contributions": 17407,
+  "private": 14178,
+  "public": 3229,
+  "commits": 3195,
   "prs": 21,
-  "activeDays": 198,
-  "spanDays": 365,
+  "activeDays": 199,
+  "spanDays": 366,
   "streak": 53,
   "peakDay": 483,
   "repos": 54,
   "publicRepos": 4,
-  "sourceMB": 431.5,
+  "sourceMB": 434.8,
   "languages": 36,
   "langs": [
     {
       "name": "Python",
-      "bytes": 142947149,
-      "pct": 33.13106056276325
+      "bytes": 145831218,
+      "pct": 33.542275530091985
     },
     {
       "name": "TypeScript",
-      "bytes": 93760042,
-      "pct": 21.730896010169648
+      "bytes": 93770337,
+      "pct": 21.56788185231765
     },
     {
       "name": "HTML",
-      "bytes": 93359280,
-      "pct": 21.6380108411674
+      "bytes": 93459062,
+      "pct": 21.49628626422053
     },
     {
       "name": "JavaScript",
-      "bytes": 67514026,
-      "pct": 15.647820190117766
+      "bytes": 67807389,
+      "pct": 15.59620879539063
     },
     {
       "name": "Rust",
       "bytes": 9143410,
-      "pct": 2.119180918118032
+      "pct": 2.103052979401148
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 1.8285516371482111
+      "pct": 1.8146355205521947
     },
     {
       "name": "Kotlin",
       "bytes": 4480265,
-      "pct": 1.0383972824265875
+      "pct": 1.0304946028622457
     },
     {
       "name": "CSS",
-      "bytes": 3323405,
-      "pct": 0.7702702229450564
+      "bytes": 3341140,
+      "pct": 0.7684872964896414
     },
     {
       "name": "HCL",
       "bytes": 2409854,
-      "pct": 0.5585352305376673
+      "pct": 0.5542845212696111
     },
     {
       "name": "TeX",
       "bytes": 2182021,
-      "pct": 0.5057300576188563
+      "pct": 0.5018812199349995
     },
     {
       "name": "Shell",
-      "bytes": 1904774,
-      "pct": 0.441472132839647
+      "bytes": 1906047,
+      "pct": 0.4384051269962323
     },
     {
       "name": "Java",
       "bytes": 733838,
-      "pct": 0.17008265915997428
+      "pct": 0.16878825211794943
     },
     {
       "name": "C",
       "bytes": 421240,
-      "pct": 0.09763138369033433
+      "pct": 0.09688836408330587
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.07253795797248912
+      "pct": 0.07198591084389043
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.07165120060377006
+      "pct": 0.07110590210544505
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.043473592892839474
+      "pct": 0.043142738912424664
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.04301491729621244
+      "pct": 0.04268755404745253
     },
     {
       "name": "Dockerfile",
       "bytes": 95760,
-      "pct": 0.022194429071755804
+      "pct": 0.022025519287383367
     },
     {
       "name": "Makefile",
-      "bytes": 63146,
-      "pct": 0.014635436697630452
+      "bytes": 65416,
+      "pct": 0.015046171362818196
     },
     {
       "name": "Go",
       "bytes": 48376,
-      "pct": 0.011212173149282152
+      "pct": 0.011126843369323913
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.009459286066265348
+      "pct": 0.009387296560943791
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38365,
-      "pct": 0.00889190968397986
+      "pct": 0.00882423817314602
     },
     {
       "name": "CMake",
       "bytes": 34050,
-      "pct": 0.007891816101642494
+      "pct": 0.007831755761647909
     },
     {
       "name": "Go Template",
       "bytes": 25116,
-      "pct": 0.005821170431978058
+      "pct": 0.005776868655199673
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.0027766213479494
+      "pct": 0.002755489986036474
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.0016926265195387703
+      "pct": 0.0016797448554277438
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.001036945234618165
+      "pct": 0.0010290536058036048
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0010123774664309666
+      "pct": 0.0010046728095999431
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0009233772496018706
+      "pct": 0.0009163499252395085
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0008696062852676252
+      "pct": 0.0008629881826050794
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0006869704236495845
+      "pct": 0.0006817422636571042
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0005803555805730632
+      "pct": 0.000575938808433667
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.0005437356996902581
+      "pct": 0.0005395976216395298
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.0005279752446267724
+      "pct": 0.0005239571108673696
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.0005189361601050673
+      "pct": 0.000514986817924513
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.00040745411767070496
+      "pct": 0.00040435320496261446
     }
   ],
   "days": [
@@ -1656,13 +1656,17 @@
     },
     {
       "date": "2026-09-06",
-      "contributionCount": 34
+      "contributionCount": 133
+    },
+    {
+      "date": "2026-09-07",
+      "contributionCount": 5
     }
   ],
   "products": [
     {
       "name": "aero-agent-roles",
-      "desc": "🧑‍🚀 The role layer for aerospace engineering agents — 25 roles binding 466 Aero Agent Skills across 12 domains, verified by 966 offline tests, gated on 22 standards. Every role ends at the human sign-off. Apache-2.0 · by Ashforde OÜ",
+      "desc": "🧑‍🚀 The role layer for aerospace engineering agents — 35 roles binding 562 Aero Agent Skills across 12 domains, verified by 1419 offline tests, gated on 24 standards. Every role ends at the human sign-off. Apache-2.0 · by Ashforde OÜ",
       "stars": 0,
       "forks": 0,
       "lang": "Python",
@@ -1672,18 +1676,18 @@
     },
     {
       "name": "aero-agent-skills",
-      "desc": "🚀 The aerospace knowledge layer for AI agents — 567 verified skills in 85 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1150-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
+      "desc": "🚀 The aerospace knowledge layer for AI agents — 611 verified skills in 85 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1238-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
       "stars": 0,
       "forks": 0,
       "lang": "Python",
       "license": "Apache-2.0",
       "homepage": "https://ashforde.org/aeroagentskills/",
-      "version": "v1.4.0"
+      "version": "v1.5.0"
     },
     {
       "name": "grasp",
       "desc": "GRASP — Code architecture visualizer + 150-tool MCP server. Dependency graphs, security scanning, multimodal knowledge graph, ORM tracking, git change impact, graph schema v3. Works with GitHub, GitLab & local dirs. 35 languages. Zero data collection.",
-      "stars": 19,
+      "stars": 20,
       "forks": 2,
       "lang": "HTML",
       "license": "NOASSERTION",
