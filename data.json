@@ -1,231 +1,203 @@
 {
-  "generatedAt": "2026-09-12T04:29:07.215Z",
+  "generatedAt": "2026-09-13T04:30:40.151Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 18762,
-  "private": 14598,
-  "public": 4164,
-  "commits": 4127,
+  "contributions": 18774,
+  "private": 14606,
+  "public": 4168,
+  "commits": 4131,
   "prs": 24,
-  "activeDays": 204,
-  "spanDays": 371,
+  "activeDays": 205,
+  "spanDays": 365,
   "streak": 53,
   "peakDay": 532,
   "repos": 54,
   "publicRepos": 4,
-  "sourceMB": 447.8,
+  "sourceMB": 455.7,
   "languages": 36,
   "langs": [
     {
       "name": "Python",
-      "bytes": 154083887,
-      "pct": 34.407066039841176
+      "bytes": 161907790,
+      "pct": 35.52830237000579
     },
     {
       "name": "TypeScript",
       "bytes": 96320234,
-      "pct": 21.508392063155544
+      "pct": 21.136070092129057
     },
     {
       "name": "HTML",
-      "bytes": 87039249,
-      "pct": 19.43594003700841
+      "bytes": 87038608,
+      "pct": 19.099352680241047
     },
     {
       "name": "JavaScript",
-      "bytes": 75309284,
-      "pct": 16.816628645934628
+      "bytes": 75370091,
+      "pct": 16.53886686182828
     },
     {
       "name": "Rust",
       "bytes": 9143553,
-      "pct": 2.0417633409636653
+      "pct": 2.0064193064470435
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 1.7617237294436727
+      "pct": 1.731227332994111
     },
     {
       "name": "Kotlin",
       "bytes": 4480265,
-      "pct": 1.0004470729050925
+      "pct": 0.9831287896509117
     },
     {
       "name": "CSS",
       "bytes": 3513259,
-      "pct": 0.7845137916858651
+      "pct": 0.7709334310359258
     },
     {
       "name": "Shell",
-      "bytes": 2551187,
-      "pct": 0.5696822769598504
+      "bytes": 2552066,
+      "pct": 0.5600136504624712
     },
     {
       "name": "HCL",
       "bytes": 2476584,
-      "pct": 0.5530233621456734
+      "pct": 0.5434502268032836
     },
     {
       "name": "TeX",
       "bytes": 2182021,
-      "pct": 0.4872471879380891
+      "pct": 0.4788126739652391
     },
     {
       "name": "Java",
-      "bytes": 992909,
-      "pct": 0.22171744365815915
+      "bytes": 996635,
+      "pct": 0.2186970103941924
     },
     {
       "name": "C",
       "bytes": 421240,
-      "pct": 0.09406325853281919
+      "pct": 0.09243497234037497
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.06988691992577506
+      "pct": 0.06867713931087227
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.06903257079666442
+      "pct": 0.06783757943010531
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.041884767510823824
+      "pct": 0.0411597193924045
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.04144285508884004
+      "pct": 0.040725456714924675
     },
     {
       "name": "Dockerfile",
       "bytes": 113636,
-      "pct": 0.02537501767789251
+      "pct": 0.02493576231333883
     },
     {
       "name": "Makefile",
       "bytes": 77234,
-      "pct": 0.017246419403484373
+      "pct": 0.016947874498472414
     },
     {
       "name": "Go",
       "bytes": 48710,
-      "pct": 0.010876985383946497
+      "pct": 0.010688698847924376
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.009113578412543798
+      "pct": 0.008955817410805535
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38365,
-      "pct": 0.00856693788246987
+      "pct": 0.008418639525777432
     },
     {
       "name": "CMake",
       "bytes": 34050,
-      "pct": 0.007603394627866521
+      "pct": 0.007471775729251181
     },
     {
       "name": "Go Template",
       "bytes": 25116,
-      "pct": 0.005608424654140838
+      "pct": 0.005511339771391267
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.0026751444241362972
+      "pct": 0.0026288362183973317
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.0016307662545465256
+      "pct": 0.0016025368032517291
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.000999048092953739
+      "pct": 0.0009817540268038116
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0009753782007201457
+      "pct": 0.0009584938732854378
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0008896306665909021
+      "pct": 0.0008742306756339708
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0008378248647211508
+      "pct": 0.0008233216603862095
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0006618637790600989
+      "pct": 0.0006504065568722614
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0005591453788011092
+      "pct": 0.0005494662680189414
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.0005238638413208475
+      "pct": 0.0005147954731519316
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.0005086793821521273
+      "pct": 0.0004998738652344843
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.000499970648217126
+      "pct": 0.0004913158842230072
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.00039256292968544327
+      "pct": 0.00038576745174812266
     }
   ],
   "days": [
-    {
-      "date": "2025-09-07",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-08",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-09",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-10",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-11",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-12",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-13",
-      "contributionCount": 0
-    },
     {
       "date": "2025-09-14",
       "contributionCount": 0
@@ -1680,7 +1652,11 @@
     },
     {
       "date": "2026-09-12",
-      "contributionCount": 2
+      "contributionCount": 6
+    },
+    {
+      "date": "2026-09-13",
+      "contributionCount": 8
     }
   ],
   "products": [
@@ -1696,13 +1672,13 @@
     },
     {
       "name": "aero-agent-skills",
-      "desc": "🚀 The aerospace knowledge layer for AI agents — 938 verified skills in 86 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1754-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
+      "desc": "🚀 The aerospace knowledge layer for AI agents — 1262 verified skills in 86 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1754-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
       "stars": 0,
       "forks": 0,
       "lang": "Python",
       "license": "Apache-2.0",
       "homepage": "https://ashforde.org/aeroagentskills/",
-      "version": "v1.8.0"
+      "version": "v1.11.0"
     },
     {
       "name": "grasp",
