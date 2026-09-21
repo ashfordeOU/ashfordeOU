@@ -1,200 +1,200 @@
 {
-  "generatedAt": "2026-09-20T04:30:37.316Z",
+  "generatedAt": "2026-09-21T04:34:16.295Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 18940,
-  "private": 14696,
-  "public": 4244,
-  "commits": 4207,
+  "contributions": 19208,
+  "private": 14708,
+  "public": 4500,
+  "commits": 4463,
   "prs": 24,
-  "activeDays": 212,
-  "spanDays": 365,
+  "activeDays": 213,
+  "spanDays": 366,
   "streak": 53,
   "peakDay": 532,
   "repos": 56,
   "publicRepos": 4,
-  "sourceMB": 510.2,
+  "sourceMB": 512.1,
   "languages": 36,
   "langs": [
     {
       "name": "Python",
-      "bytes": 214565209,
-      "pct": 42.05150041543663
+      "bytes": 215020148,
+      "pct": 41.98757039501214
     },
     {
       "name": "TypeScript",
       "bytes": 96320234,
-      "pct": 18.877293196521684
+      "pct": 18.80871463979758
     },
     {
       "name": "HTML",
-      "bytes": 87253225,
-      "pct": 17.100298060603507
+      "bytes": 87276331,
+      "pct": 17.04268704940562
     },
     {
       "name": "JavaScript",
-      "bytes": 75681864,
-      "pct": 14.832488222435998
+      "bytes": 75683883,
+      "pct": 14.778998130121101
     },
     {
       "name": "Rust",
-      "bytes": 10384288,
-      "pct": 2.0351616796645424
+      "bytes": 11684113,
+      "pct": 2.28158859369205
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 1.54621392776949
+      "pct": 1.5405967495835473
     },
     {
       "name": "Kotlin",
       "bytes": 4480265,
-      "pct": 0.8780634399529618
+      "pct": 0.874873558713247
     },
     {
       "name": "CSS",
       "bytes": 3515631,
-      "pct": 0.6890099245168022
+      "pct": 0.6865068481646981
     },
     {
       "name": "Shell",
-      "bytes": 2573112,
-      "pct": 0.5042906109581119
+      "bytes": 2645166,
+      "pct": 0.516528774929002
     },
     {
       "name": "HCL",
       "bytes": 2476584,
-      "pct": 0.4853725988021838
+      "pct": 0.48360930827357046
     },
     {
       "name": "TeX",
       "bytes": 2254071,
-      "pct": 0.44176345286678637
+      "pct": 0.44015858824474163
     },
     {
       "name": "Java",
       "bytes": 996635,
-      "pct": 0.19532522216376041
+      "pct": 0.19461563304585264
     },
     {
       "name": "C",
       "bytes": 421240,
-      "pct": 0.08255659954172033
+      "pct": 0.08225668300253851
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.061337726881994334
+      "pct": 0.06111489552908195
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.060587889378797534
+      "pct": 0.06036778208029334
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.03676104817358281
+      "pct": 0.036627500445041185
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.0363731944310772
+      "pct": 0.03624105572074619
     },
     {
       "name": "Dockerfile",
       "bytes": 114417,
-      "pct": 0.022423982645914477
+      "pct": 0.022342519464204368
     },
     {
       "name": "Makefile",
-      "bytes": 85362,
-      "pct": 0.01672964687608093
+      "bytes": 93822,
+      "pct": 0.018320877677011127
     },
     {
       "name": "Go",
       "bytes": 48710,
-      "pct": 0.009546415258943114
+      "pct": 0.009511734472162308
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.007998723998424252
+      "pct": 0.00796966575677192
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38365,
-      "pct": 0.007518953426593154
+      "pct": 0.007491638124091705
     },
     {
       "name": "CMake",
       "bytes": 34050,
-      "pct": 0.006673279399856559
+      "pct": 0.006649036312402517
     },
     {
       "name": "Go Template",
       "bytes": 25116,
-      "pct": 0.004922351994325913
+      "pct": 0.0049044697803906495
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.002347896834369503
+      "pct": 0.0023393672547013847
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.0014312763423539635
+      "pct": 0.001426076716284158
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.0008768355957403303
+      "pct": 0.0008736501750863102
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0008560612164045067
+      "pct": 0.0008529512661548956
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0007808030874898248
+      "pct": 0.0007779665394599596
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0007353346346038711
+      "pct": 0.0007326632670817692
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.000580898682560201
+      "pct": 0.0005787883591765363
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0004907457156311549
+      "pct": 0.0004889629053232276
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.0004597801313381348
+      "pct": 0.00045810981465187385
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.00044645317100949316
+      "pct": 0.0004448312692996456
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.0004388097672915958
+      "pct": 0.0004372156329946912
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.0003445411214375281
+      "pct": 0.00034328945190025326
     }
   ],
   "days": [
@@ -1356,15 +1356,15 @@
     },
     {
       "date": "2026-07-07",
-      "contributionCount": 3
+      "contributionCount": 17
     },
     {
       "date": "2026-07-08",
-      "contributionCount": 27
+      "contributionCount": 43
     },
     {
       "date": "2026-07-09",
-      "contributionCount": 34
+      "contributionCount": 38
     },
     {
       "date": "2026-07-10",
@@ -1584,43 +1584,43 @@
     },
     {
       "date": "2026-09-02",
-      "contributionCount": 75
-    },
-    {
-      "date": "2026-09-03",
-      "contributionCount": 100
-    },
-    {
-      "date": "2026-09-04",
-      "contributionCount": 68
-    },
-    {
-      "date": "2026-09-05",
       "contributionCount": 89
     },
     {
+      "date": "2026-09-03",
+      "contributionCount": 121
+    },
+    {
+      "date": "2026-09-04",
+      "contributionCount": 85
+    },
+    {
+      "date": "2026-09-05",
+      "contributionCount": 98
+    },
+    {
       "date": "2026-09-06",
-      "contributionCount": 185
+      "contributionCount": 222
     },
     {
       "date": "2026-09-07",
-      "contributionCount": 109
+      "contributionCount": 115
     },
     {
       "date": "2026-09-08",
-      "contributionCount": 107
+      "contributionCount": 116
     },
     {
       "date": "2026-09-09",
-      "contributionCount": 94
+      "contributionCount": 100
     },
     {
       "date": "2026-09-10",
-      "contributionCount": 122
+      "contributionCount": 131
     },
     {
       "date": "2026-09-11",
-      "contributionCount": 42
+      "contributionCount": 49
     },
     {
       "date": "2026-09-12",
@@ -1628,15 +1628,15 @@
     },
     {
       "date": "2026-09-13",
-      "contributionCount": 59
+      "contributionCount": 67
     },
     {
       "date": "2026-09-14",
-      "contributionCount": 15
+      "contributionCount": 21
     },
     {
       "date": "2026-09-15",
-      "contributionCount": 8
+      "contributionCount": 11
     },
     {
       "date": "2026-09-16",
@@ -1644,19 +1644,23 @@
     },
     {
       "date": "2026-09-17",
-      "contributionCount": 6
+      "contributionCount": 8
     },
     {
       "date": "2026-09-18",
-      "contributionCount": 29
+      "contributionCount": 37
     },
     {
       "date": "2026-09-19",
-      "contributionCount": 31
+      "contributionCount": 32
     },
     {
       "date": "2026-09-20",
-      "contributionCount": 23
+      "contributionCount": 87
+    },
+    {
+      "date": "2026-09-21",
+      "contributionCount": 7
     }
   ],
   "products": [
@@ -1668,7 +1672,7 @@
       "lang": "Python",
       "license": "Apache-2.0",
       "homepage": "https://ashforde.org/aeroagentroles",
-      "version": "v1.1.0"
+      "version": "v1.2.1"
     },
     {
       "name": "aero-agent-skills",
@@ -1678,7 +1682,7 @@
       "lang": "Python",
       "license": "Apache-2.0",
       "homepage": "https://ashforde.org/aeroagentskills/",
-      "version": "v1.30.0"
+      "version": "v1.30.1"
     },
     {
       "name": "grasp",
