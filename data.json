@@ -1,200 +1,200 @@
 {
-  "generatedAt": "2026-09-21T04:34:16.295Z",
+  "generatedAt": "2026-09-22T04:31:22.410Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 19208,
-  "private": 14708,
-  "public": 4500,
-  "commits": 4463,
+  "contributions": 20188,
+  "private": 14851,
+  "public": 5337,
+  "commits": 5299,
   "prs": 24,
-  "activeDays": 213,
-  "spanDays": 366,
+  "activeDays": 214,
+  "spanDays": 367,
   "streak": 53,
   "peakDay": 532,
-  "repos": 56,
-  "publicRepos": 4,
-  "sourceMB": 512.1,
+  "repos": 58,
+  "publicRepos": 5,
+  "sourceMB": 513.4,
   "languages": 36,
   "langs": [
     {
       "name": "Python",
-      "bytes": 215020148,
-      "pct": 41.98757039501214
+      "bytes": 215768639,
+      "pct": 42.02514889821146
     },
     {
       "name": "TypeScript",
       "bytes": 96320234,
-      "pct": 18.80871463979758
+      "pct": 18.760243353810885
     },
     {
       "name": "HTML",
-      "bytes": 87276331,
-      "pct": 17.04268704940562
+      "bytes": 87282101,
+      "pct": 16.999890751842447
     },
     {
       "name": "JavaScript",
-      "bytes": 75683883,
-      "pct": 14.778998130121101
+      "bytes": 75712439,
+      "pct": 14.746473524457613
     },
     {
       "name": "Rust",
-      "bytes": 11684113,
-      "pct": 2.28158859369205
+      "bytes": 12197482,
+      "pct": 2.3756974118618515
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 1.5405967495835473
+      "pct": 1.5366265311465452
     },
     {
       "name": "Kotlin",
       "bytes": 4480265,
-      "pct": 0.874873558713247
+      "pct": 0.8726189524161821
     },
     {
       "name": "CSS",
       "bytes": 3515631,
-      "pct": 0.6865068481646981
+      "pct": 0.684737675182574
     },
     {
       "name": "Shell",
-      "bytes": 2645166,
-      "pct": 0.516528774929002
+      "bytes": 2661231,
+      "pct": 0.5183266184829399
     },
     {
       "name": "HCL",
       "bytes": 2476584,
-      "pct": 0.48360930827357046
+      "pct": 0.48236301550258254
     },
     {
       "name": "TeX",
       "bytes": 2254071,
-      "pct": 0.44015858824474163
+      "pct": 0.43902427081694856
     },
     {
       "name": "Java",
       "bytes": 996635,
-      "pct": 0.19461563304585264
+      "pct": 0.1941140958495316
     },
     {
       "name": "C",
       "bytes": 421240,
-      "pct": 0.08225668300253851
+      "pct": 0.08204470215841977
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.06111489552908195
+      "pct": 0.06095739845201062
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.06036778208029334
+      "pct": 0.06021221036337204
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.036627500445041185
+      "pct": 0.03653310898432474
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.03624105572074619
+      "pct": 0.03614766015332219
     },
     {
       "name": "Dockerfile",
       "bytes": 114417,
-      "pct": 0.022342519464204368
+      "pct": 0.02228494133239938
     },
     {
       "name": "Makefile",
-      "bytes": 93822,
-      "pct": 0.018320877677011127
+      "bytes": 104707,
+      "pct": 0.02039372953399881
     },
     {
       "name": "Go",
       "bytes": 48710,
-      "pct": 0.009511734472162308
+      "pct": 0.00948722211123499
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.00796966575677192
+      "pct": 0.00794912740763362
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38365,
-      "pct": 0.007491638124091705
+      "pct": 0.007472331683381859
     },
     {
       "name": "CMake",
       "bytes": 34050,
-      "pct": 0.006649036312402517
+      "pct": 0.0066319013115900514
     },
     {
       "name": "Go Template",
       "bytes": 25116,
-      "pct": 0.0049044697803906495
+      "pct": 0.004891830641465367
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.0023393672547013847
+      "pct": 0.002333338552506573
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.001426076716284158
+      "pct": 0.0014224016234520454
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.0008736501750863102
+      "pct": 0.0008713987215287485
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0008529512661548956
+      "pct": 0.000850753155037455
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0007779665394599596
+      "pct": 0.0007759616688803161
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0007326632670817692
+      "pct": 0.0007307751459937114
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0005787883591765363
+      "pct": 0.0005772967837754159
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0004889629053232276
+      "pct": 0.0004877028159830099
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.00045810981465187385
+      "pct": 0.0004569292357412705
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.0004448312692996456
+      "pct": 0.0004436849100676105
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.0004372156329946912
+      "pct": 0.00043608889975477606
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.00034328945190025326
+      "pct": 0.00034240477256315156
     }
   ],
   "days": [
@@ -1212,131 +1212,131 @@
     },
     {
       "date": "2026-06-01",
-      "contributionCount": 321
+      "contributionCount": 379
     },
     {
       "date": "2026-06-02",
-      "contributionCount": 452
+      "contributionCount": 520
     },
     {
       "date": "2026-06-03",
-      "contributionCount": 288
+      "contributionCount": 323
     },
     {
       "date": "2026-06-04",
-      "contributionCount": 227
+      "contributionCount": 257
     },
     {
       "date": "2026-06-05",
-      "contributionCount": 214
+      "contributionCount": 247
     },
     {
       "date": "2026-06-06",
-      "contributionCount": 132
+      "contributionCount": 150
     },
     {
       "date": "2026-06-07",
-      "contributionCount": 156
+      "contributionCount": 180
     },
     {
       "date": "2026-06-08",
-      "contributionCount": 293
+      "contributionCount": 329
     },
     {
       "date": "2026-06-09",
-      "contributionCount": 142
+      "contributionCount": 160
     },
     {
       "date": "2026-06-10",
-      "contributionCount": 235
+      "contributionCount": 272
     },
     {
       "date": "2026-06-11",
-      "contributionCount": 60
+      "contributionCount": 66
     },
     {
       "date": "2026-06-12",
-      "contributionCount": 122
+      "contributionCount": 146
     },
     {
       "date": "2026-06-13",
-      "contributionCount": 67
-    },
-    {
-      "date": "2026-06-14",
-      "contributionCount": 149
-    },
-    {
-      "date": "2026-06-15",
-      "contributionCount": 169
-    },
-    {
-      "date": "2026-06-16",
-      "contributionCount": 80
-    },
-    {
-      "date": "2026-06-17",
-      "contributionCount": 95
-    },
-    {
-      "date": "2026-06-18",
-      "contributionCount": 112
-    },
-    {
-      "date": "2026-06-19",
-      "contributionCount": 75
-    },
-    {
-      "date": "2026-06-20",
-      "contributionCount": 57
-    },
-    {
-      "date": "2026-06-21",
-      "contributionCount": 57
-    },
-    {
-      "date": "2026-06-22",
-      "contributionCount": 25
-    },
-    {
-      "date": "2026-06-23",
-      "contributionCount": 45
-    },
-    {
-      "date": "2026-06-24",
-      "contributionCount": 54
-    },
-    {
-      "date": "2026-06-25",
-      "contributionCount": 87
-    },
-    {
-      "date": "2026-06-26",
       "contributionCount": 78
     },
     {
-      "date": "2026-06-27",
-      "contributionCount": 60
+      "date": "2026-06-14",
+      "contributionCount": 186
     },
     {
-      "date": "2026-06-28",
-      "contributionCount": 101
+      "date": "2026-06-15",
+      "contributionCount": 200
     },
     {
-      "date": "2026-06-29",
+      "date": "2026-06-16",
+      "contributionCount": 99
+    },
+    {
+      "date": "2026-06-17",
+      "contributionCount": 109
+    },
+    {
+      "date": "2026-06-18",
+      "contributionCount": 124
+    },
+    {
+      "date": "2026-06-19",
       "contributionCount": 100
     },
     {
+      "date": "2026-06-20",
+      "contributionCount": 67
+    },
+    {
+      "date": "2026-06-21",
+      "contributionCount": 60
+    },
+    {
+      "date": "2026-06-22",
+      "contributionCount": 33
+    },
+    {
+      "date": "2026-06-23",
+      "contributionCount": 63
+    },
+    {
+      "date": "2026-06-24",
+      "contributionCount": 76
+    },
+    {
+      "date": "2026-06-25",
+      "contributionCount": 113
+    },
+    {
+      "date": "2026-06-26",
+      "contributionCount": 89
+    },
+    {
+      "date": "2026-06-27",
+      "contributionCount": 68
+    },
+    {
+      "date": "2026-06-28",
+      "contributionCount": 131
+    },
+    {
+      "date": "2026-06-29",
+      "contributionCount": 129
+    },
+    {
       "date": "2026-06-30",
-      "contributionCount": 25
+      "contributionCount": 32
     },
     {
       "date": "2026-07-01",
-      "contributionCount": 41
+      "contributionCount": 53
     },
     {
       "date": "2026-07-02",
-      "contributionCount": 22
+      "contributionCount": 29
     },
     {
       "date": "2026-07-03",
@@ -1356,47 +1356,47 @@
     },
     {
       "date": "2026-07-07",
-      "contributionCount": 17
+      "contributionCount": 33
     },
     {
       "date": "2026-07-08",
-      "contributionCount": 43
+      "contributionCount": 77
     },
     {
       "date": "2026-07-09",
-      "contributionCount": 38
+      "contributionCount": 60
     },
     {
       "date": "2026-07-10",
-      "contributionCount": 18
+      "contributionCount": 28
     },
     {
       "date": "2026-07-11",
-      "contributionCount": 121
+      "contributionCount": 127
     },
     {
       "date": "2026-07-12",
-      "contributionCount": 224
+      "contributionCount": 226
     },
     {
       "date": "2026-07-13",
-      "contributionCount": 190
+      "contributionCount": 194
     },
     {
       "date": "2026-07-14",
-      "contributionCount": 136
+      "contributionCount": 139
     },
     {
       "date": "2026-07-15",
-      "contributionCount": 26
+      "contributionCount": 28
     },
     {
       "date": "2026-07-16",
-      "contributionCount": 119
+      "contributionCount": 125
     },
     {
       "date": "2026-07-17",
-      "contributionCount": 232
+      "contributionCount": 236
     },
     {
       "date": "2026-07-18",
@@ -1560,7 +1560,7 @@
     },
     {
       "date": "2026-08-27",
-      "contributionCount": 102
+      "contributionCount": 103
     },
     {
       "date": "2026-08-28",
@@ -1648,19 +1648,23 @@
     },
     {
       "date": "2026-09-18",
-      "contributionCount": 37
+      "contributionCount": 47
     },
     {
       "date": "2026-09-19",
-      "contributionCount": 32
+      "contributionCount": 48
     },
     {
       "date": "2026-09-20",
-      "contributionCount": 87
+      "contributionCount": 148
     },
     {
       "date": "2026-09-21",
-      "contributionCount": 7
+      "contributionCount": 39
+    },
+    {
+      "date": "2026-09-22",
+      "contributionCount": 24
     }
   ],
   "products": [
@@ -1677,7 +1681,7 @@
     {
       "name": "aero-agent-skills",
       "desc": "🚀 The aerospace knowledge layer for AI agents — 3189 verified skills in 86 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1754-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "lang": "Python",
       "license": "Apache-2.0",
@@ -1685,10 +1689,20 @@
       "version": "v1.30.1"
     },
     {
+      "name": "aero-harness-records",
+      "desc": "Aero Harness: the operator's public records. Every gate re-proven on a calendar, every proof dated, nothing rewritten.",
+      "stars": 0,
+      "forks": 0,
+      "lang": null,
+      "license": null,
+      "homepage": null,
+      "version": null
+    },
+    {
       "name": "grasp",
       "desc": "GRASP — Code architecture visualizer + 150-tool MCP server. Dependency graphs, security scanning, multimodal knowledge graph, ORM tracking, git change impact, graph schema v3. Works with GitHub, GitLab & local dirs. 35 languages. Zero data collection.",
       "stars": 23,
-      "forks": 2,
+      "forks": 3,
       "lang": "HTML",
       "license": "NOASSERTION",
       "homepage": "https://ashfordeou.github.io/grasp",
