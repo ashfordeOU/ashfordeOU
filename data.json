@@ -1,205 +1,205 @@
 {
-  "generatedAt": "2026-09-25T04:32:48.318Z",
+  "generatedAt": "2026-09-26T04:31:01.728Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 20391,
-  "private": 14989,
-  "public": 5402,
-  "commits": 5363,
+  "contributions": 20401,
+  "private": 15004,
+  "public": 5397,
+  "commits": 5358,
   "prs": 24,
-  "activeDays": 217,
-  "spanDays": 370,
+  "activeDays": 218,
+  "spanDays": 371,
   "streak": 53,
   "peakDay": 532,
   "repos": 61,
   "publicRepos": 6,
-  "sourceMB": 521.7,
+  "sourceMB": 523.3,
   "languages": 37,
   "langs": [
     {
       "name": "Python",
-      "bytes": 222806814,
-      "pct": 42.70714456889505
+      "bytes": 224009487,
+      "pct": 42.81105630425896
     },
     {
       "name": "TypeScript",
       "bytes": 96320234,
-      "pct": 18.462461198999957
+      "pct": 18.4080193041708
     },
     {
       "name": "HTML",
-      "bytes": 87340933,
-      "pct": 16.741327544916004
+      "bytes": 87341331,
+      "pct": 16.69203697221055
     },
     {
       "name": "JavaScript",
-      "bytes": 76233484,
-      "pct": 14.612274928802439
+      "bytes": 76285449,
+      "pct": 14.579117590384355
     },
     {
       "name": "Rust",
-      "bytes": 12443485,
-      "pct": 2.3851412050435634
+      "bytes": 12721029,
+      "pct": 2.4311501091340433
     },
     {
       "name": "Swift",
       "bytes": 7889462,
-      "pct": 1.5122355917032408
+      "pct": 1.5077763286530428
     },
     {
       "name": "Kotlin",
       "bytes": 4480265,
-      "pct": 0.8587678340122964
+      "pct": 0.8562355092264498
     },
     {
       "name": "CSS",
-      "bytes": 3590228,
-      "pct": 0.6881674015198429
+      "bytes": 3591154,
+      "pct": 0.6863151116955363
     },
     {
       "name": "Shell",
-      "bytes": 2720721,
-      "pct": 0.5215021165314483
+      "bytes": 2726908,
+      "pct": 0.5211467312745294
     },
     {
       "name": "HCL",
       "bytes": 2476584,
-      "pct": 0.47470644647794474
+      "pct": 0.47330663752748503
     },
     {
       "name": "TeX",
       "bytes": 2426345,
-      "pct": 0.46507673992867954
+      "pct": 0.46370532694696637
     },
     {
       "name": "Java",
       "bytes": 996635,
-      "pct": 0.1910329144036893
+      "pct": 0.1904695987263929
     },
     {
       "name": "C",
       "bytes": 457140,
-      "pct": 0.08762364003923455
+      "pct": 0.08736525644973661
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.05998981902777993
+      "pct": 0.05981292173423233
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.059256459341928525
+      "pct": 0.05908172457105105
     },
     {
       "name": "Astro",
       "bytes": 187571,
-      "pct": 0.035953217364044415
+      "pct": 0.03584719892709793
     },
     {
       "name": "C#",
       "bytes": 185592,
-      "pct": 0.03557388677902091
+      "pct": 0.03546898690777337
     },
     {
       "name": "Makefile",
-      "bytes": 140816,
-      "pct": 0.02699131665521471
+      "bytes": 141707,
+      "pct": 0.027082006378183546
     },
     {
       "name": "Dockerfile",
-      "bytes": 127469,
-      "pct": 0.024432991582799993
+      "bytes": 129843,
+      "pct": 0.024814645389165578
     },
     {
       "name": "Go",
       "bytes": 48710,
-      "pct": 0.009336631023999464
+      "pct": 0.009309099273016298
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.007822950564206326
+      "pct": 0.007799882336883888
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 38376,
-      "pct": 0.0073558314961404934
+      "pct": 0.007334140704193666
     },
     {
       "name": "CMake",
       "bytes": 34936,
-      "pct": 0.006696459483770176
+      "pct": 0.0066767130404864995
     },
     {
       "name": "Go Template",
       "bytes": 28283,
-      "pct": 0.0054212263447295595
+      "pct": 0.005405240294369122
     },
     {
       "name": "C++",
       "bytes": 21561,
-      "pct": 0.004132767429859422
+      "pct": 0.004120580772439015
     },
     {
       "name": "PowerShell",
       "bytes": 11980,
-      "pct": 0.0022963013686617445
+      "pct": 0.002289530061398794
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.001399823780912915
+      "pct": 0.0013956959965271613
     },
     {
       "name": "PLpgSQL",
       "bytes": 4474,
-      "pct": 0.000857566971902558
+      "pct": 0.0008550381882051923
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0008372491133818448
+      "pct": 0.0008347802427537506
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0007636447957219024
+      "pct": 0.0007613929686655088
     },
     {
       "name": "Ruby",
       "bytes": 3752,
-      "pct": 0.0007191755204690205
+      "pct": 0.0007170548239038627
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0005681333269376803
+      "pct": 0.0005664580218686164
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.0004799614880742077
+      "pct": 0.0004785461831170768
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.0004496763782037106
+      "pct": 0.0004483503776328523
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.00043664228028476247
+      "pct": 0.0004353547145130595
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.00042916684177242453
+      "pct": 0.0004279013194884724
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.0003369697667869238
+      "pct": 0.00033597611418523205
     }
   ],
   "days": [
@@ -1669,51 +1669,55 @@
     },
     {
       "date": "2026-09-22",
-      "contributionCount": 100
+      "contributionCount": 78
     },
     {
       "date": "2026-09-23",
-      "contributionCount": 65
+      "contributionCount": 59
     },
     {
       "date": "2026-09-24",
-      "contributionCount": 58
+      "contributionCount": 54
     },
     {
       "date": "2026-09-25",
-      "contributionCount": 2
+      "contributionCount": 38
+    },
+    {
+      "date": "2026-09-26",
+      "contributionCount": 6
     }
   ],
   "products": [
     {
       "name": "aero-agent-roles",
-      "desc": "🧑‍🚀 The role layer for aerospace engineering agents — 38 roles binding 597 Aero Agent Skills across 12 domains, verified by 1519 offline tests, gated on 27 standards. Every role ends at the human sign-off. Apache-2.0 · by Ashforde OÜ",
+      "desc": "🧑‍🚀 The role layer for aerospace engineering agents — 39 roles binding 605 Aero Agent Skills across 12 domains, verified by 1625 offline tests, gated on 27 standards. Every role ends at the human sign-off. Apache-2.0 · by Ashforde OÜ",
       "stars": 0,
       "forks": 0,
       "lang": "Python",
       "license": "Apache-2.0",
       "homepage": "https://ashforde.org/aeroagentroles",
-      "version": "v1.2.1"
+      "version": "v1.2.3"
     },
     {
       "name": "aero-agent-skills",
-      "desc": "🚀 The aerospace knowledge layer for AI agents — 3189 verified skills in 86 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1754-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
+      "desc": "🚀 The aerospace knowledge layer for AI agents — 3200 verified skills in 86 installable packs across 12 engineering families, mapped to 30 standards (ECSS · DO-178C · NASA) and proven by a 1754-task deterministic gate battery. AgentSkills.io format · Apache-2.0 · by Ashforde OÜ",
       "stars": 2,
       "forks": 0,
       "lang": "Python",
       "license": "Apache-2.0",
       "homepage": "https://ashforde.org/aeroagentskills/",
-      "version": "v1.30.1"
+      "version": "v1.31.0"
     },
     {
       "name": "aero-harness-records",
-      "desc": "Aero Harness: the operator's public records. Every gate re-proven on a calendar, every proof dated, nothing rewritten.",
+      "desc": "Aero Harness: the operator's public records. Every proof dated, every gate scheduled for weekly re-proof, nothing rewritten.",
       "stars": 0,
       "forks": 0,
       "lang": "Python",
       "license": "CC-BY-4.0",
       "homepage": null,
-      "version": "verifier-2026-09-23"
+      "version": "verifier-2026-09-25"
     },
     {
       "name": "arcs-conformance",
