@@ -70,18 +70,18 @@ standard nobody can inspect is not a standard.
 
 ## Working languages
 
-Measured across all **65** repositories, private included. Private repositories are
+Measured across all **67** repositories, private included. Private repositories are
 counted, never named. Each badge links to that language's home.
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML — 33.1% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-html-dark.svg"><img alt="HTML 33.1%" src="assets/lang-html-light.svg"></picture></a>
-<a href="https://www.python.org" title="Python — 32.7% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-python-dark.svg"><img alt="Python 32.7%" src="assets/lang-python-light.svg"></picture></a>
-<a href="https://www.typescriptlang.org" title="TypeScript — 15.6% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-typescript-dark.svg"><img alt="TypeScript 15.6%" src="assets/lang-typescript-light.svg"></picture></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript — 11.5% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-javascript-dark.svg"><img alt="JavaScript 11.5%" src="assets/lang-javascript-light.svg"></picture></a>
-<a href="https://www.rust-lang.org" title="Rust — 2.8% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-rust-dark.svg"><img alt="Rust 2.8%" src="assets/lang-rust-light.svg"></picture></a>
-<a href="https://www.swift.org" title="Swift — 1.1% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-swift-dark.svg"><img alt="Swift 1.1%" src="assets/lang-swift-light.svg"></picture></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS — 1.0% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-css-dark.svg"><img alt="CSS 1.0%" src="assets/lang-css-light.svg"></picture></a>
-<a href="https://kotlinlang.org" title="Kotlin — 0.6% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-kotlin-dark.svg"><img alt="Kotlin 0.6%" src="assets/lang-kotlin-light.svg"></picture></a>
-<a href="https://www.gnu.org/software/bash/" title="Shell — 0.4% of 745.9 MB across 65 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-shell-dark.svg"><img alt="Shell 0.4%" src="assets/lang-shell-light.svg"></picture></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML — 33.1% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-html-dark.svg"><img alt="HTML 33.1%" src="assets/lang-html-light.svg"></picture></a>
+<a href="https://www.python.org" title="Python — 32.3% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-python-dark.svg"><img alt="Python 32.3%" src="assets/lang-python-light.svg"></picture></a>
+<a href="https://www.typescriptlang.org" title="TypeScript — 16.1% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-typescript-dark.svg"><img alt="TypeScript 16.1%" src="assets/lang-typescript-light.svg"></picture></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript — 11.5% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-javascript-dark.svg"><img alt="JavaScript 11.5%" src="assets/lang-javascript-light.svg"></picture></a>
+<a href="https://www.rust-lang.org" title="Rust — 2.8% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-rust-dark.svg"><img alt="Rust 2.8%" src="assets/lang-rust-light.svg"></picture></a>
+<a href="https://www.swift.org" title="Swift — 1.0% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-swift-dark.svg"><img alt="Swift 1.0%" src="assets/lang-swift-light.svg"></picture></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="CSS — 1.0% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-css-dark.svg"><img alt="CSS 1.0%" src="assets/lang-css-light.svg"></picture></a>
+<a href="https://kotlinlang.org" title="Kotlin — 0.6% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-kotlin-dark.svg"><img alt="Kotlin 0.6%" src="assets/lang-kotlin-light.svg"></picture></a>
+<a href="https://www.gnu.org/software/bash/" title="Shell — 0.4% of 755.1 MB across 67 repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-shell-dark.svg"><img alt="Shell 0.4%" src="assets/lang-shell-light.svg"></picture></a>
 
 <a href="#working-languages">
 <picture>
