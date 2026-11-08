@@ -1,271 +1,243 @@
 {
-  "generatedAt": "2026-11-07T04:22:28.823Z",
+  "generatedAt": "2026-11-08T04:22:15.099Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 68086,
-  "private": 57775,
-  "public": 10311,
-  "commits": 10191,
+  "contributions": 70391,
+  "private": 58984,
+  "public": 11407,
+  "commits": 11287,
   "prs": 97,
-  "activeDays": 259,
-  "spanDays": 371,
-  "streak": 91,
-  "peakDay": 4603,
+  "activeDays": 260,
+  "spanDays": 365,
+  "streak": 92,
+  "peakDay": 4611,
   "repos": 76,
   "publicRepos": 11,
-  "sourceMB": 1245.7,
+  "sourceMB": 1247.6,
   "languages": 44,
   "langs": [
     {
       "name": "HTML",
-      "bytes": 328205291,
-      "pct": 26.34807846457152
+      "bytes": 328819659,
+      "pct": 26.355254271880803
     },
     {
       "name": "Python",
-      "bytes": 293768969,
-      "pct": 23.583555956958286
+      "bytes": 293836842,
+      "pct": 23.55134333788864
     },
     {
       "name": "TypeScript",
-      "bytes": 235166708,
-      "pct": 18.87900970688184
+      "bytes": 235296347,
+      "pct": 18.859258820743737
     },
     {
       "name": "Fluent",
-      "bytes": 174331380,
-      "pct": 13.995194486602697
+      "bytes": 174336033,
+      "pct": 13.973223171750819
     },
     {
       "name": "JavaScript",
-      "bytes": 96859833,
-      "pct": 7.775835886659407
+      "bytes": 97083949,
+      "pct": 7.781384389834514
     },
     {
       "name": "Rust",
-      "bytes": 31277548,
-      "pct": 2.5109384628519043
+      "bytes": 32039654,
+      "pct": 2.568013209797419
     },
     {
       "name": "Swift",
-      "bytes": 19761097,
-      "pct": 1.5864062785691313
+      "bytes": 19767290,
+      "pct": 1.5843698512442246
     },
     {
       "name": "Java",
       "bytes": 17223217,
-      "pct": 1.3826671457540338
+      "pct": 1.3804596257877029
     },
     {
       "name": "Kotlin",
       "bytes": 14880639,
-      "pct": 1.19460671331762
+      "pct": 1.1926994443269163
     },
     {
       "name": "CSS",
-      "bytes": 10374170,
-      "pct": 0.8328307088894673
+      "bytes": 10518707,
+      "pct": 0.8430858375058788
     },
     {
       "name": "C#",
       "bytes": 6614140,
-      "pct": 0.5309782763241957
+      "pct": 0.5301305342264152
     },
     {
       "name": "C",
       "bytes": 4374033,
-      "pct": 0.3511441401187684
+      "pct": 0.350583515168105
     },
     {
       "name": "Shell",
-      "bytes": 3946766,
-      "pct": 0.3168434607877881
+      "bytes": 3980067,
+      "pct": 0.31900671061799807
     },
     {
       "name": "HCL",
       "bytes": 2642466,
-      "pct": 0.21213521968468949
+      "pct": 0.2117965317116267
     },
     {
       "name": "TeX",
       "bytes": 2439342,
-      "pct": 0.1958285749205817
+      "pct": 0.19551592158934225
     },
     {
       "name": "PLpgSQL",
       "bytes": 1579101,
-      "pct": 0.12676906251180256
+      "pct": 0.12656666728062402
     },
     {
       "name": "MATLAB",
       "bytes": 346335,
-      "pct": 0.027803518118869622
+      "pct": 0.02775912795485211
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.025125161109038542
+      "pct": 0.025085047119944488
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.024818012653575493
+      "pct": 0.024778389047398357
     },
     {
       "name": "Astro",
       "bytes": 303178,
-      "pct": 0.024338906019439718
+      "pct": 0.024300047338837116
     },
     {
       "name": "Dockerfile",
       "bytes": 174508,
-      "pct": 0.014009373409813331
+      "pct": 0.013987006514344008
     },
     {
       "name": "C++",
       "bytes": 157697,
-      "pct": 0.01265979874050091
+      "pct": 0.012639586530660525
     },
     {
       "name": "Makefile",
       "bytes": 154010,
-      "pct": 0.012363809102421386
+      "pct": 0.012344069459704544
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 118968,
-      "pct": 0.009550663212108741
+      "pct": 0.009535414943718786
     },
     {
       "name": "Go Template",
       "bytes": 101235,
-      "pct": 0.008127071063461002
+      "pct": 0.008114095654523664
     },
     {
       "name": "Go",
       "bytes": 50764,
-      "pct": 0.004075296443577165
+      "pct": 0.004068789962031306
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.0032764375098832802
+      "pct": 0.003271206459703406
     },
     {
       "name": "CMake",
       "bytes": 37496,
-      "pct": 0.0030101511986519855
+      "pct": 0.0030053452922607724
     },
     {
       "name": "PowerShell",
-      "bytes": 29221,
-      "pct": 0.0023458403076544077
+      "bytes": 34381,
+      "pct": 0.0027556746451146154
     },
     {
       "name": "Roff",
       "bytes": 17917,
-      "pct": 0.001438363532810103
+      "pct": 0.0014360670898612188
     },
     {
       "name": "Ruby",
       "bytes": 17130,
-      "pct": 0.0013751837538113001
+      "pct": 0.0013729881815774225
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.0005862794485746599
+      "pct": 0.0005853434144810225
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0003506598153326187
+      "pct": 0.00035009996363865627
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.00031983257881986106
+      "pct": 0.0003193219448572359
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.00023794773183284844
+      "pct": 0.00023756783246908818
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.00020101927142694077
+      "pct": 0.00020069833080384506
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.00018833514807012903
+      "pct": 0.00018803445849273982
     },
     {
       "name": "NSIS",
       "bytes": 2298,
-      "pct": 0.0001844817435060343
+      "pct": 0.00018418720614506227
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.00018287615827099484
+      "pct": 0.00018258418433352998
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.0001797452670626679
+      "pct": 0.00017945829180104198
     },
     {
       "name": "Julia",
       "bytes": 1758,
-      "pct": 0.0001411309421599688
+      "pct": 0.00014090561723368995
     },
     {
       "name": "Nix",
       "bytes": 1745,
-      "pct": 0.00014008731175719314
+      "pct": 0.00013986365305619395
     },
     {
       "name": "Tcl",
       "bytes": 1619,
-      "pct": 0.00012997212477644453
+      "pct": 0.0001297646156435404
     },
     {
       "name": "Standard ML",
       "bytes": 218,
-      "pct": 0.000017500879061930146
+      "pct": 0.000017472937745702167
     }
   ],
   "days": [
-    {
-      "date": "2025-11-02",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-03",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-04",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-05",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-06",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-07",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-08",
-      "contributionCount": 0
-    },
     {
       "date": "2025-11-09",
       "contributionCount": 0
@@ -1144,7 +1116,7 @@
     },
     {
       "date": "2026-06-16",
-      "contributionCount": 99
+      "contributionCount": 101
     },
     {
       "date": "2026-06-17",
@@ -1152,7 +1124,7 @@
     },
     {
       "date": "2026-06-18",
-      "contributionCount": 124
+      "contributionCount": 129
     },
     {
       "date": "2026-06-19",
@@ -1160,7 +1132,7 @@
     },
     {
       "date": "2026-06-20",
-      "contributionCount": 67
+      "contributionCount": 68
     },
     {
       "date": "2026-06-21",
@@ -1172,19 +1144,19 @@
     },
     {
       "date": "2026-06-23",
-      "contributionCount": 63
+      "contributionCount": 72
     },
     {
       "date": "2026-06-24",
-      "contributionCount": 76
+      "contributionCount": 91
     },
     {
       "date": "2026-06-25",
-      "contributionCount": 113
+      "contributionCount": 124
     },
     {
       "date": "2026-06-26",
-      "contributionCount": 89
+      "contributionCount": 93
     },
     {
       "date": "2026-06-27",
@@ -1196,19 +1168,19 @@
     },
     {
       "date": "2026-06-29",
-      "contributionCount": 129
+      "contributionCount": 134
     },
     {
       "date": "2026-06-30",
-      "contributionCount": 32
+      "contributionCount": 35
     },
     {
       "date": "2026-07-01",
-      "contributionCount": 53
+      "contributionCount": 59
     },
     {
       "date": "2026-07-02",
-      "contributionCount": 29
+      "contributionCount": 31
     },
     {
       "date": "2026-07-03",
@@ -1228,23 +1200,23 @@
     },
     {
       "date": "2026-07-07",
-      "contributionCount": 33
+      "contributionCount": 34
     },
     {
       "date": "2026-07-08",
-      "contributionCount": 77
+      "contributionCount": 86
     },
     {
       "date": "2026-07-09",
-      "contributionCount": 60
+      "contributionCount": 70
     },
     {
       "date": "2026-07-10",
-      "contributionCount": 28
+      "contributionCount": 32
     },
     {
       "date": "2026-07-11",
-      "contributionCount": 127
+      "contributionCount": 128
     },
     {
       "date": "2026-07-12",
@@ -1252,11 +1224,11 @@
     },
     {
       "date": "2026-07-13",
-      "contributionCount": 194
+      "contributionCount": 196
     },
     {
       "date": "2026-07-14",
-      "contributionCount": 139
+      "contributionCount": 140
     },
     {
       "date": "2026-07-15",
@@ -1520,7 +1492,7 @@
     },
     {
       "date": "2026-09-18",
-      "contributionCount": 49
+      "contributionCount": 59
     },
     {
       "date": "2026-09-19",
@@ -1536,11 +1508,11 @@
     },
     {
       "date": "2026-09-22",
-      "contributionCount": 78
+      "contributionCount": 80
     },
     {
       "date": "2026-09-23",
-      "contributionCount": 59
+      "contributionCount": 63
     },
     {
       "date": "2026-09-24",
@@ -1548,15 +1520,15 @@
     },
     {
       "date": "2026-09-25",
-      "contributionCount": 38
+      "contributionCount": 45
     },
     {
       "date": "2026-09-26",
-      "contributionCount": 41
+      "contributionCount": 44
     },
     {
       "date": "2026-09-27",
-      "contributionCount": 34
+      "contributionCount": 35
     },
     {
       "date": "2026-09-28",
@@ -1564,19 +1536,19 @@
     },
     {
       "date": "2026-09-29",
-      "contributionCount": 238
+      "contributionCount": 240
     },
     {
       "date": "2026-09-30",
-      "contributionCount": 193
+      "contributionCount": 238
     },
     {
       "date": "2026-10-01",
-      "contributionCount": 450
+      "contributionCount": 456
     },
     {
       "date": "2026-10-02",
-      "contributionCount": 460
+      "contributionCount": 464
     },
     {
       "date": "2026-10-03",
@@ -1584,43 +1556,43 @@
     },
     {
       "date": "2026-10-04",
-      "contributionCount": 135
+      "contributionCount": 136
     },
     {
       "date": "2026-10-05",
-      "contributionCount": 376
+      "contributionCount": 380
     },
     {
       "date": "2026-10-06",
-      "contributionCount": 825
+      "contributionCount": 826
     },
     {
       "date": "2026-10-07",
-      "contributionCount": 586
+      "contributionCount": 642
     },
     {
       "date": "2026-10-08",
-      "contributionCount": 416
+      "contributionCount": 438
     },
     {
       "date": "2026-10-09",
-      "contributionCount": 401
+      "contributionCount": 406
     },
     {
       "date": "2026-10-10",
-      "contributionCount": 1030
+      "contributionCount": 1036
     },
     {
       "date": "2026-10-11",
-      "contributionCount": 2024
+      "contributionCount": 2025
     },
     {
       "date": "2026-10-12",
-      "contributionCount": 1126
+      "contributionCount": 1127
     },
     {
       "date": "2026-10-13",
-      "contributionCount": 1760
+      "contributionCount": 1762
     },
     {
       "date": "2026-10-14",
@@ -1664,39 +1636,39 @@
     },
     {
       "date": "2026-10-24",
-      "contributionCount": 488
+      "contributionCount": 512
     },
     {
       "date": "2026-10-25",
-      "contributionCount": 899
+      "contributionCount": 1128
     },
     {
       "date": "2026-10-26",
-      "contributionCount": 977
+      "contributionCount": 1253
     },
     {
       "date": "2026-10-27",
-      "contributionCount": 1826
+      "contributionCount": 2056
     },
     {
       "date": "2026-10-28",
-      "contributionCount": 2070
+      "contributionCount": 2155
     },
     {
       "date": "2026-10-29",
-      "contributionCount": 1434
+      "contributionCount": 1436
     },
     {
       "date": "2026-10-30",
-      "contributionCount": 2140
+      "contributionCount": 2151
     },
     {
       "date": "2026-10-31",
-      "contributionCount": 3711
+      "contributionCount": 3712
     },
     {
       "date": "2026-11-01",
-      "contributionCount": 4603
+      "contributionCount": 4611
     },
     {
       "date": "2026-11-02",
@@ -1704,23 +1676,27 @@
     },
     {
       "date": "2026-11-03",
-      "contributionCount": 3511
+      "contributionCount": 3551
     },
     {
       "date": "2026-11-04",
-      "contributionCount": 2759
+      "contributionCount": 2767
     },
     {
       "date": "2026-11-05",
-      "contributionCount": 1704
+      "contributionCount": 1711
     },
     {
       "date": "2026-11-06",
-      "contributionCount": 987
+      "contributionCount": 1052
     },
     {
       "date": "2026-11-07",
-      "contributionCount": 183
+      "contributionCount": 1024
+    },
+    {
+      "date": "2026-11-08",
+      "contributionCount": 204
     }
   ],
   "products": [
