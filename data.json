@@ -1,240 +1,240 @@
 {
-  "generatedAt": "2026-11-15T04:22:12.213Z",
+  "generatedAt": "2026-11-16T04:28:32.422Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 81894,
-  "private": 69628,
-  "public": 12266,
-  "commits": 12143,
-  "prs": 98,
-  "activeDays": 267,
-  "spanDays": 365,
-  "streak": 99,
+  "contributions": 83629,
+  "private": 71245,
+  "public": 12384,
+  "commits": 12256,
+  "prs": 102,
+  "activeDays": 268,
+  "spanDays": 366,
+  "streak": 100,
   "peakDay": 4611,
-  "repos": 79,
-  "publicRepos": 13,
-  "sourceMB": 1273.7,
+  "repos": 80,
+  "publicRepos": 14,
+  "sourceMB": 1281.3,
   "languages": 44,
   "langs": [
     {
       "name": "HTML",
-      "bytes": 354602231,
-      "pct": 27.839572022706577
+      "bytes": 355509985,
+      "pct": 27.74674065284786
     },
     {
       "name": "Python",
-      "bytes": 294556412,
-      "pct": 23.125416959443864
+      "bytes": 294716275,
+      "pct": 23.001930729451633
     },
     {
       "name": "TypeScript",
-      "bytes": 241619244,
-      "pct": 18.969357091861934
+      "bytes": 242413591,
+      "pct": 18.919825951449813
     },
     {
       "name": "Fluent",
-      "bytes": 161387616,
-      "pct": 12.670428345965234
+      "bytes": 162232672,
+      "pct": 12.661888738237641
     },
     {
       "name": "JavaScript",
-      "bytes": 98657955,
-      "pct": 7.745566732871019
+      "bytes": 99556751,
+      "pct": 7.770176554217322
     },
     {
       "name": "Rust",
-      "bytes": 33124671,
-      "pct": 2.600594647789906
+      "bytes": 34823152,
+      "pct": 2.7178673118244494
     },
     {
       "name": "Swift",
-      "bytes": 22723976,
-      "pct": 1.7840433905624684
+      "bytes": 24580512,
+      "pct": 1.9184527027509921
     },
     {
       "name": "Java",
-      "bytes": 17223833,
-      "pct": 1.3522310278712553
+      "bytes": 17229251,
+      "pct": 1.344703606960068
     },
     {
       "name": "Kotlin",
       "bytes": 14880639,
-      "pct": 1.1682685131904778
+      "pct": 1.1613998157650995
     },
     {
       "name": "CSS",
-      "bytes": 10840849,
-      "pct": 0.8511074385281759
+      "bytes": 11133297,
+      "pct": 0.8689283494249229
     },
     {
       "name": "C#",
-      "bytes": 6631720,
-      "pct": 0.5206516779484776
+      "bytes": 6650581,
+      "pct": 0.519062625478037
     },
     {
       "name": "C",
-      "bytes": 4470474,
-      "pct": 0.35097377291638404
+      "bytes": 4473681,
+      "pct": 0.3491605628758165
     },
     {
       "name": "Shell",
-      "bytes": 4092360,
-      "pct": 0.3212883084281652
+      "bytes": 4141819,
+      "pct": 0.32325949332769843
     },
     {
       "name": "HCL",
-      "bytes": 2642466,
-      "pct": 0.20745814914106775
+      "bytes": 2651225,
+      "pct": 0.20692204323697566
     },
     {
       "name": "TeX",
-      "bytes": 2459396,
-      "pct": 0.1930854520606681
+      "bytes": 2439342,
+      "pct": 0.19038506003593458
     },
     {
       "name": "PLpgSQL",
       "bytes": 1579101,
-      "pct": 0.12397411008005749
+      "pct": 0.12324521886959858
     },
     {
       "name": "MATLAB",
-      "bytes": 347424,
-      "pct": 0.02727601415011066
+      "bytes": 350013,
+      "pct": 0.02731771355486749
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.024571211835073093
+      "pct": 0.024426748282760893
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.02427083526310822
+      "pct": 0.02412813773954986
     },
     {
       "name": "Astro",
       "bytes": 303178,
-      "pct": 0.023802291776049582
+      "pct": 0.023662348998858943
     },
     {
       "name": "Dockerfile",
-      "bytes": 176564,
-      "pct": 0.01386191559132397
+      "bytes": 179780,
+      "pct": 0.014031417527046359
     },
     {
       "name": "C++",
-      "bytes": 159367,
-      "pct": 0.012511791203430636
+      "bytes": 162231,
+      "pct": 0.012661758242464445
     },
     {
       "name": "Makefile",
       "bytes": 154010,
-      "pct": 0.01209121689710136
+      "pct": 0.01202012800834581
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 142460,
-      "pct": 0.01118443451179183
+      "pct": 0.011118676943503306
     },
     {
       "name": "Go Template",
-      "bytes": 101235,
-      "pct": 0.007947888725264958
+      "bytes": 101988,
+      "pct": 0.007959929974126177
     },
     {
       "name": "Go",
-      "bytes": 50803,
-      "pct": 0.003988507837305632
+      "bytes": 53058,
+      "pct": 0.004141055463066113
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.0032041999559859606
+      "pct": 0.0031853612389105743
     },
     {
       "name": "CMake",
       "bytes": 37496,
-      "pct": 0.0029437846164126523
+      "pct": 0.002926476980721606
     },
     {
       "name": "PowerShell",
       "bytes": 34386,
-      "pct": 0.002699620701407229
+      "pct": 0.0026837485987596848
     },
     {
       "name": "Ruby",
       "bytes": 18025,
-      "pct": 0.0014151300861648724
+      "pct": 0.0014068099951329994
     },
     {
       "name": "Roff",
       "bytes": 17917,
-      "pct": 0.0014066510820424977
+      "pct": 0.0013983808423188877
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.0005733533991268829
+      "pct": 0.0005699824351986848
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.00034292861117160404
+      "pct": 0.0003409124027040744
+    },
+    {
+      "name": "Julia",
+      "bytes": 4212,
+      "pct": 0.00032873695975035747
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.0003127810409587158
+      "pct": 0.0003109420815872327
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.00023270155758073132
+      "pct": 0.00023133341612062192
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.00019658728076320893
+      "pct": 0.0001954314689494053
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.00018418281176936426
+      "pct": 0.0001830999305732048
     },
     {
       "name": "NSIS",
       "bytes": 2298,
-      "pct": 0.00018041436549275322
+      "pct": 0.0001793536404335996
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.0001788441795441653
+      "pct": 0.00017779268620876407
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.00017578231694441882
-    },
-    {
-      "name": "Julia",
-      "bytes": 1758,
-      "pct": 0.0001380193448808791
+      "pct": 0.00017474882547033484
     },
     {
       "name": "Nix",
       "bytes": 1744,
-      "pct": 0.00013692021471686756
+      "pct": 0.0001361152084056561
     },
     {
       "name": "Tcl",
       "bytes": 1619,
-      "pct": 0.00012710655253819297
+      "pct": 0.00012635924450043418
     },
     {
       "name": "Standard ML",
       "bytes": 347,
-      "pct": 0.000027242726208000596
+      "pct": 0.000027082555800896022
     }
   ],
   "days": [
@@ -1644,23 +1644,23 @@
     },
     {
       "date": "2026-11-02",
-      "contributionCount": 3175
+      "contributionCount": 3191
     },
     {
       "date": "2026-11-03",
-      "contributionCount": 3559
+      "contributionCount": 3591
     },
     {
       "date": "2026-11-04",
-      "contributionCount": 2852
+      "contributionCount": 2854
     },
     {
       "date": "2026-11-05",
-      "contributionCount": 1803
+      "contributionCount": 1804
     },
     {
       "date": "2026-11-06",
-      "contributionCount": 1186
+      "contributionCount": 1188
     },
     {
       "date": "2026-11-07",
@@ -1672,31 +1672,35 @@
     },
     {
       "date": "2026-11-09",
-      "contributionCount": 1229
+      "contributionCount": 1277
     },
     {
       "date": "2026-11-10",
-      "contributionCount": 1617
+      "contributionCount": 1708
     },
     {
       "date": "2026-11-11",
-      "contributionCount": 1567
+      "contributionCount": 1597
     },
     {
       "date": "2026-11-12",
-      "contributionCount": 1883
+      "contributionCount": 1963
     },
     {
       "date": "2026-11-13",
-      "contributionCount": 2097
+      "contributionCount": 2151
     },
     {
       "date": "2026-11-14",
-      "contributionCount": 678
+      "contributionCount": 695
     },
     {
       "date": "2026-11-15",
-      "contributionCount": 144
+      "contributionCount": 1258
+    },
+    {
+      "date": "2026-11-16",
+      "contributionCount": 248
     }
   ],
   "products": [
@@ -1748,7 +1752,17 @@
       "lang": "Swift",
       "license": "NOASSERTION",
       "homepage": null,
-      "version": "v1.0.0"
+      "version": "v1.2.0"
+    },
+    {
+      "name": "glance-site",
+      "desc": null,
+      "stars": 0,
+      "forks": 0,
+      "lang": "CSS",
+      "license": null,
+      "homepage": null,
+      "version": null
     },
     {
       "name": "grasp",
@@ -1808,7 +1822,7 @@
       "lang": "Swift",
       "license": "NOASSERTION",
       "homepage": "monorail.ashforde.org",
-      "version": "v1.9.4"
+      "version": "v1.9.8"
     },
     {
       "name": "scoop-bucket",
