@@ -1,240 +1,240 @@
 {
-  "generatedAt": "2026-11-20T04:23:38.608Z",
+  "generatedAt": "2026-11-21T04:36:28.015Z",
   "user": "ashfordeOU",
   "createdAt": "2025-10-08T12:45:20Z",
-  "contributions": 89910,
-  "private": 79118,
-  "public": 10792,
-  "commits": 10659,
-  "prs": 109,
-  "activeDays": 272,
-  "spanDays": 370,
-  "streak": 104,
+  "contributions": 91887,
+  "private": 78623,
+  "public": 13264,
+  "commits": 12922,
+  "prs": 312,
+  "activeDays": 273,
+  "spanDays": 371,
+  "streak": 105,
   "peakDay": 4611,
   "repos": 81,
-  "publicRepos": 11,
-  "sourceMB": 1301.4,
+  "publicRepos": 16,
+  "sourceMB": 1307.9,
   "languages": 44,
   "langs": [
     {
       "name": "HTML",
-      "bytes": 364051009,
-      "pct": 27.973015330224904
+      "bytes": 364210786,
+      "pct": 27.846277941151957
     },
     {
       "name": "Python",
-      "bytes": 295007604,
-      "pct": 22.667846057871845
+      "bytes": 295101905,
+      "pct": 22.562455543514353
     },
     {
       "name": "TypeScript",
-      "bytes": 243362655,
-      "pct": 18.699542401540864
+      "bytes": 243381629,
+      "pct": 18.608104832195522
     },
     {
       "name": "Fluent",
-      "bytes": 162233099,
-      "pct": 12.465695337207249
+      "bytes": 162624973,
+      "pct": 12.433734453790539
     },
     {
       "name": "JavaScript",
-      "bytes": 103144130,
-      "pct": 7.9254067654917835
+      "bytes": 103287947,
+      "pct": 7.897033780138989
     },
     {
       "name": "Rust",
-      "bytes": 41215094,
-      "pct": 3.166892627122647
+      "bytes": 46830583,
+      "pct": 3.5805019524166037
     },
     {
       "name": "Swift",
       "bytes": 24580512,
-      "pct": 1.8887216955928756
+      "pct": 1.8793396445096522
     },
     {
       "name": "Java",
       "bytes": 17230503,
-      "pct": 1.3239604139278356
+      "pct": 1.317383762500248
     },
     {
       "name": "Kotlin",
       "bytes": 14880639,
-      "pct": 1.1434011514318934
+      "pct": 1.1377214115123584
     },
     {
       "name": "CSS",
-      "bytes": 11488052,
-      "pct": 0.8827209560361934
+      "bytes": 11551086,
+      "pct": 0.883155479305737
     },
     {
       "name": "C#",
       "bytes": 6651755,
-      "pct": 0.5111087182507992
+      "pct": 0.508569832762853
     },
     {
       "name": "C",
-      "bytes": 4482217,
-      "pct": 0.34440537659488996
+      "bytes": 4488065,
+      "pct": 0.3431416921517425
     },
     {
       "name": "Shell",
-      "bytes": 4181906,
-      "pct": 0.32133002726428234
+      "bytes": 4185582,
+      "pct": 0.3200149039998027
     },
     {
       "name": "HCL",
       "bytes": 2651225,
-      "pct": 0.20371529191085286
+      "pct": 0.20270335495920924
     },
     {
       "name": "TeX",
       "bytes": 2439342,
-      "pct": 0.18743458876572286
+      "pct": 0.18650352470760023
     },
     {
       "name": "PLpgSQL",
       "bytes": 1579101,
-      "pct": 0.12133523981243374
+      "pct": 0.12073251818289367
     },
     {
       "name": "MATLAB",
       "bytes": 350855,
-      "pct": 0.026959058074430605
+      "pct": 0.02682514143620906
     },
     {
       "name": "BibTeX Style",
       "bytes": 312972,
-      "pct": 0.024048197470951518
+      "pct": 0.023928740264705425
     },
     {
       "name": "MDX",
       "bytes": 309146,
-      "pct": 0.023754214611386253
+      "pct": 0.023636217737921038
     },
     {
       "name": "Astro",
       "bytes": 303178,
-      "pct": 0.02329564437984273
+      "pct": 0.023179925411771215
     },
     {
       "name": "Dockerfile",
-      "bytes": 180835,
-      "pct": 0.01389503147137609
+      "bytes": 181084,
+      "pct": 0.013845046847941403
     },
     {
       "name": "C++",
       "bytes": 162231,
-      "pct": 0.012465534053876818
+      "pct": 0.012403612661463089
     },
     {
       "name": "Makefile",
       "bytes": 154010,
-      "pct": 0.011833847412871577
+      "pct": 0.011775063865672591
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 142460,
-      "pct": 0.010946366485537854
+      "pct": 0.010891991418113872
     },
     {
       "name": "Go Template",
       "bytes": 101988,
-      "pct": 0.007836571845620066
+      "pct": 0.007797644396676945
     },
     {
       "name": "Go",
       "bytes": 53058,
-      "pct": 0.004076879917097202
+      "pct": 0.00405662839156455
     },
     {
       "name": "Jinja",
       "bytes": 40813,
-      "pct": 0.0031359964577724023
+      "pct": 0.003120418684174375
     },
     {
       "name": "CMake",
       "bytes": 37496,
-      "pct": 0.0028811242295502413
+      "pct": 0.002866812510273745
     },
     {
       "name": "PowerShell",
       "bytes": 34386,
-      "pct": 0.0026421575036621133
+      "pct": 0.002629032829589103
     },
     {
       "name": "Ruby",
       "bytes": 18025,
-      "pct": 0.0013850081138692954
+      "pct": 0.0013781282136143657
     },
     {
       "name": "Roff",
       "bytes": 17917,
-      "pct": 0.0013767095909124087
+      "pct": 0.0013698709128060244
     },
     {
       "name": "Lua",
       "bytes": 7303,
-      "pct": 0.000561149195871704
+      "pct": 0.0005583617389195957
     },
     {
       "name": "Mako",
       "bytes": 4368,
-      "pct": 0.0003356291507007535
+      "pct": 0.0003339619438040249
     },
     {
       "name": "Julia",
       "bytes": 4212,
-      "pct": 0.00032364239531858377
+      "pct": 0.00032203473152530974
     },
     {
       "name": "Emacs Lisp",
       "bytes": 3984,
-      "pct": 0.00030612329129848945
+      "pct": 0.00030460265204103375
     },
     {
       "name": "Dart",
       "bytes": 2964,
-      "pct": 0.0002277483522612256
+      "pct": 0.00022661703329558835
     },
     {
       "name": "Haskell",
       "bytes": 2504,
-      "pct": 0.00019240279151893014
+      "pct": 0.0001914470483711718
     },
     {
       "name": "Elixir",
       "bytes": 2346,
-      "pct": 0.0001802623597857069
+      "pct": 0.00017936692311452439
     },
     {
       "name": "NSIS",
       "bytes": 2298,
-      "pct": 0.0001765741273604239
+      "pct": 0.00017569701164415048
     },
     {
       "name": "Smarty",
       "bytes": 2278,
-      "pct": 0.0001750373638498893
+      "pct": 0.00017416788186482802
     },
     {
       "name": "Vim Script",
       "bytes": 2239,
-      "pct": 0.00017204067500434686
+      "pct": 0.00017118607879514924
     },
     {
       "name": "Nix",
       "bytes": 1744,
-      "pct": 0.00013400577811861588
+      "pct": 0.0001333401167569184
     },
     {
       "name": "Tcl",
       "bytes": 1619,
-      "pct": 0.0001244010061777747
+      "pct": 0.00012378305563615302
     },
     {
       "name": "Standard ML",
       "bytes": 347,
-      "pct": 0.000026662846907775063
+      "pct": 0.000026530401671244654
     }
   ],
   "days": [
@@ -1704,19 +1704,23 @@
     },
     {
       "date": "2026-11-17",
-      "contributionCount": 1912
+      "contributionCount": 1921
     },
     {
       "date": "2026-11-18",
-      "contributionCount": 1368
+      "contributionCount": 1373
     },
     {
       "date": "2026-11-19",
-      "contributionCount": 1349
+      "contributionCount": 1399
     },
     {
       "date": "2026-11-20",
-      "contributionCount": 204
+      "contributionCount": 1745
+    },
+    {
+      "date": "2026-11-21",
+      "contributionCount": 372
     }
   ],
   "products": [
@@ -1761,6 +1765,16 @@
       "version": "v2.1.0"
     },
     {
+      "name": "arksa-kpro",
+      "desc": null,
+      "stars": 0,
+      "forks": 0,
+      "lang": "Rust",
+      "license": null,
+      "homepage": null,
+      "version": null
+    },
+    {
       "name": "ashforde-enhancer",
       "desc": null,
       "stars": 0,
@@ -1769,6 +1783,16 @@
       "license": "NOASSERTION",
       "homepage": null,
       "version": "v1.2.0"
+    },
+    {
+      "name": "glance-site",
+      "desc": null,
+      "stars": 0,
+      "forks": 0,
+      "lang": "CSS",
+      "license": null,
+      "homepage": null,
+      "version": null
     },
     {
       "name": "grasp",
@@ -1804,11 +1828,41 @@
       "name": "kshana",
       "desc": "Open, validated, reproducible PNT-resilience simulator spanning the full positioning, navigation & timing stack — orbit, clocks, INS, GNSS, integrity, resilience, lunar/cislunar & deep-space nav — plus quantum-vs-classical models. Runs as a Rust lib/CLI, Python, in-browser (WASM), an MCP server / Claude Code plugin, and a JetBrains plugin.",
       "stars": 9,
-      "forks": 5,
+      "forks": 6,
       "lang": "Fluent",
       "license": "AGPL-3.0",
       "homepage": "https://kshana.dev",
       "version": "v0.41.0"
+    },
+    {
+      "name": "kshana-pro",
+      "desc": "Kshana Pro — private proprietary overlay on the open Kshana PNT engine (depends on, never forks, the open core)",
+      "stars": 0,
+      "forks": 0,
+      "lang": "HTML",
+      "license": "NOASSERTION",
+      "homepage": null,
+      "version": null
+    },
+    {
+      "name": "meru",
+      "desc": null,
+      "stars": 0,
+      "forks": 0,
+      "lang": "Rust",
+      "license": null,
+      "homepage": null,
+      "version": null
+    },
+    {
+      "name": "monorail",
+      "desc": "Monorail by Ashforde® is a scrolling window manager for macOS. Every window rides one endless strip, so new windows never squeeze the ones you’re using. You can type “Slack and Mail side by side”, get alerts when an AI agent is waiting, hide private windows when you share, and use Stay Awake and 27 themes. It’s native Swift and free.",
+      "stars": 0,
+      "forks": 0,
+      "lang": "Swift",
+      "license": "NOASSERTION",
+      "homepage": "monorail.ashforde.org",
+      "version": "v1.9.8"
     },
     {
       "name": "scoop-bucket",
